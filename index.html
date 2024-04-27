@@ -6,100 +6,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.bundle.js"></script>
-    
+    <link rel="stylesheet" href="css/global.css">
 
-    <style>
-        .navbar-container {
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-        .hero-image {
-            background-image: url('img/bg-hero.png');
-            background-size: cover;
-            background-position: center;
-            height: 600px;
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
-        .hero-text {
-            color: black;
-            padding-left: 100px;
-        }
-        .navbar-container {
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-        .navbar.transparent {
-            background-color: transparent !important;
-        }
-   
-        .iconos{
-            display: flex;
-            justify-content: center;
-          
-        }
-        .textcustom{
-            
-            align-items: center;
-            width: 60%;
-            margin: 0 auto;
-        }
-        .icono{
-            padding: 5px;
-        }
-        .section-content {
-            padding: 50px 0;
-        }
-        .section-content .container {
-            display: flex;
-            align-items: center;
-        }
-        .center{
-            text-align: center;
-        }
-        .buton{
-            width: 180px;
-            height: 50px;
-            background-color: #DA5466;
-            border-radius: 25px;
-        }
-        .butontext{
-            color: white;
-            margin-top: 10px;
-        }
-        .section-content img {
-            max-width: 100%;
-            height: auto;
-        }
-        .section-black-border {
-            border: 2px solid black;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            padding: 20px;
-        }
-        .section-black-border h2 {
-            margin-bottom: 20px;
-        }
-        .team{
-            border: 2px solid; 
-            border-color: #DA5466;
-            border-radius: 40px;
-        }
-        .text-team{
-            margin-left: 15px;
-        }
-        .footer{
-            height: 300px;
-            background-color: #DA5461;
-        }
-       
-    </style>
+    
 
 </head>
 <body>
-    <div class="navbar-container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light transparent">
+    <div class="navbar-container ">
+        <nav  class="navbar navbar-expand-lg navbar-light bg-light navbar-transparent" >
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="img/logo.png" alt="Logo" width="auto" height="80px" class="d-inline-block align-top">
@@ -111,16 +25,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Acerca de</a>
+                            <a class="nav-link" href="#acerca">Acerca de</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Registro.html">Registrarse</a>
                         </li>
                     </ul>
                 </div>
@@ -131,7 +48,7 @@
         <div class="hero-text">
             <h1>Un dia para el Futuro</h1>
             <p>Lorem ipsum dolor sit amet consectetur. Phasellus mi quis urna molestie.</p>
-            <button class="bg-primary"> login</button>
+            <button class="boton"> login</button>
         </div>
        
     </div>
@@ -216,7 +133,7 @@
     <div class="container team">
         
 
-        <div class="col-md-6">
+        <div class="col-md-6" id="acerca">
             <img src="img/team.png" alt="Imagen" class="img-fluid" style="border-radius: 45px;">
         </div>
         <div class="col-md-6">
@@ -245,27 +162,48 @@
 
 </body>
 
-<footer class="footer">
-<div class="row">
-    <div class="col-3 center">
-        <ul list-unstyled>
-            <li>
-                <img src="img/logo.png" height="auto" width="180px" margin-top="250px" alt="">
-            </li>
+<footer class="container-fluid">
+    <div class="row ">
+      <div class="col-md-3 text-center logo-footer">
+        <img src="img/logo.png" alt="Logo" height="50">
+      </div>
+      <div class="col-md-2">
+        <h2>Features</h2>
+        <ul>
+          <li>Fectures</li>
+          <li>Manager</li>
+          <li>Comunicación</li>
+          <li>Analytics</li>
         </ul>
-    </div>
-    <div class="col-3">
-        <ul list-unstyled>
-            <li list-unstyled>
-                <h1>Fectures</h1>
-                <p>inicio</p>
-                <p>Acerca</p>
-                <p>Campañas</p>
-            </li>
+      </div>
+      <div class="col-md-2">
+        <h2>Historias</h2>
+        <ul>
+          <li>Blog</li>
+          <li>Noticias</li>
+          <li>Eventos</li>
         </ul>
+      </div>
+      <div class="col-md-2">
+        <h2>Redes Sociales</h2>
+        <ul>
+          <li>
+            <a href="#"><img src="icono_facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="icono_twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="icono_instagram.png" alt="Instagram"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>Contacto</h2>
+        <ul>
+          <li>Dirección</li>
+          <li>Correo</li>
+          <li>Teléfono</li>
+        </ul>
+      </div>
     </div>
-</div>
+  </footer>
 
-</footer>
 
 </html>
