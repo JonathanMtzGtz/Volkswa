@@ -72,9 +72,9 @@
     margin-bottom: 20px;
 }
 .team{
-    border: 2px solid; 
-    border-color: #DA5466;
-    border-radius: 40px;
+
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+ border-radius: 45px;
 }
 .text-team{
     margin-left: 15px;
