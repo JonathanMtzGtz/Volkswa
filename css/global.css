@@ -2,7 +2,7 @@
     background-image: url('../img/bg-hero.png');
     background-size: cover;
     background-position: center;
-    height: 680px;
+    height: 800px;
     position: relative;
     display: flex;
     align-items: center;
@@ -12,6 +12,7 @@
 .hero-text {
     color: black;
     padding-left: 100px;
+    width: 650px;
 }
 .navbar-container {
     padding-left: 100px;
@@ -30,10 +31,12 @@
 .textcustom{
     
     align-items: center;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 .icono{
+ padding-top: 40px;
+  flex-direction: column;
     padding: 5px;
     margin-left: 40px;
 }
@@ -71,33 +74,53 @@
 .section-black-border h2 {
     margin-bottom: 20px;
 }
+.d-flex{
+display: flex;
+gap: 10px;
+}
+
+.form-control{
+  background-color: rgba(189, 0, 42, .06) !important;
+  height: 50px;
+
+}
+
 .team{
 
  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
  border-radius: 45px;
+ padding: 0px;
 }
 .text-team{
     margin-left: 15px;
 }
+.text-card{
+
+margin-right:  140px;
+}
+
+
 .footer{
     height: 200px;
-    background-color: #DA5461;
+    background-color: #E17684;
 }
 .img-container {
     position: relative;
     height: 100vh;
-    background-image: url('../img/bg-registro.jpg');
+    background-image: url('../img/inicio.png');
     background-size: cover;
     background-position: center;
   }
   .overlay {
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 0, 0, 0.7);
     color: white;
     padding: 20px;
+    width: 70%;
+    height: 250px;
     border-radius: 10px;
   }
   .card {
