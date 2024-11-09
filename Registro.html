@@ -20,52 +20,83 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6 p-0">
-      <div class="card bg-light">
-        <div class="card-body d-flex align-items-center justify-content-center">
-          <div class="logo-container">
-            <a href="index.html"> <img src="img/logosv.png" alt="Logo" class="logo" height="200px"></a>
-           
-          </div>
-          <form style="width: 80%;">
-            <h1 class="card-title  mb-4">Crear Cuenta</h1>
-            <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-            </div>
-            <div class="form-group">
-              <label for="apellido">Apellido</label>
-              <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
-            </div>
-            <div class="form-group">
-              <label for="correo">Correo Electrónico</label>
-              <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
-            </div>
-            <div class="form-group">
-              <label for="contraseña">Contraseña</label>
-              <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña">
-            </div>
-            <div class="form-group">
-              <label for="ciudad">Ciudad</label>
-              <input type="text" class="form-control" id="ciudad" placeholder="Ingresa tu ciudad">
-            </div>
-            <div class="form-group">
-              <label for="sucursal">Sucursal</label>
-              <input type="text" class="form-control" id="sucursal" placeholder="Ingresa tu sucursal">
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Crear Cuenta</button>
-            <div class="login-link text-center mt-4">
-                <span style="background-color: #491818; padding: 0 10px;">o</span>
-                <span class="px-2">Iniciar Sesión</span>
-                <span style="background-color: #4d0d0d; padding: 0 10px;">o</span>
-              </div>
-          </form>
+      <!-- Card para ingresar contraseña -->
+  <div class="col-md-6 p-0 " id="card-1">
+   <div class="d-flex justify-content-center align-items-center " style="margin-top: 35%; width: 600px;">
+
+   <div style="width: 60%;" class="vh-100">
+      <h2>Bienvenido a WV</h2>
+      <p>Para continuar, ingresa la contraseña</p>
+      <div class="form-group">
+        <label for="contraseña">Contraseña</label>
+        <input type="password" class="form-control" id="password-input" placeholder="Ingresa tu contraseña">
+      </div>
+      <button type="button" onclick="checkPassword()">Enviar</button>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-6 p-0" id="crear-cuenta" style="display: none;">
+    <div class="card bg-light">
+      <div class="card-body d-flex align-items-center justify-content-center">
+        <div class="logo-container">
+          <a href="index.html"><img src="img/logosv.png" alt="Logo" class="logo" height="200px"></a>
         </div>
+        <form style="width: 80%;">
+          <h1 class="card-title mb-4">Crear Cuenta</h1>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
+          </div>
+          <div class="form-group">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña">
+          </div>
+          <div class="form-group">
+            <label for="ciudad">Ciudad</label>
+            <input type="text" class="form-control" id="ciudad" placeholder="Ingresa tu ciudad">
+          </div>
+          <div class="form-group">
+            <label for="sucursal">Sucursal</label>
+            <input type="text" class="form-control" id="sucursal" placeholder="Ingresa tu sucursal">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Crear Cuenta</button>
+          <div class="login-link text-center mt-4">
+            <span style="background-color: #491818; padding: 0 10px;">o</span>
+            <span class="px-2">Iniciar Sesión</span>
+            <span style="background-color: #4d0d0d; padding: 0 10px;">o</span>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-</div>
 
+
+
+  
+  </div>
+  
+</div>
+<script>
+  function checkPassword() {
+    const passwordInput = document.getElementById('password-input').value;
+    const correctPassword = 'VW3B7XzQ9';
+    
+    if (passwordInput === correctPassword) {
+      document.getElementById('card-1').style.display = 'none'; // Oculta el card-1
+      document.getElementById('crear-cuenta').style.display = 'block'; // Muestra el formulario de creación de cuenta
+    } else {
+      alert('Contraseña incorrecta');
+    }
+  }
+</script>
 <!-- Bootstrap JS y dependencias jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
