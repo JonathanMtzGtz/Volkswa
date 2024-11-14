@@ -9,6 +9,17 @@
     margin-top: -110px;
     z-index: -1;
 }
+.hero-image-2 {
+  background-image: url('../img/campañaa.png');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: -110px;
+  z-index: -1;
+}
 .hero-text {
     color: black;
     padding-left: 100px;

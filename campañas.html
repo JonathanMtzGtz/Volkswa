@@ -11,189 +11,230 @@
     
 
 </head>
-
-<body >
-    <div class="navbar-container">
-        <nav  class="navbar navbar-expand-lg navbar-light  navbar-transparent" >
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" alt="Logo" width="auto" height="80px" class="d-inline-block align-top">
-                    
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#acerca">Acerca de</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Campañas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registro.php">Registrarse</a>
-                        </li>
-                    </ul>
-                </div>
+<style>
+    .donation-buttons button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    #custom-amount {
+        display: none;
+        margin-top: 10px;
+       
+    }
+    .confirmar{
+        border-radius: 10px;
+        background-color: green;
+        padding: 10px 20px;
+    }
+</style>
+<div class="navbar-container">
+    <nav  class="navbar navbar-expand-lg navbar-light  navbar-transparent" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="auto" height="80px" class="d-inline-block align-top">
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="campañas.html">Campañas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registro.html">Registrarse</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+</div>
+
+
+<div class="hero-image-2">
+    <div class="hero-text text-white">
+        <h1>Campaña 2024</h1>
+        <p>Nos enfocamos en la educación, reconociendo que es una herramienta  fundamental que abre puertas a los mexicanos.  Nuestra campaña apoya a estudiantes de secundaria y bachillerato en  Puebla y Silao, para construir un futuro lleno de posibilidades y sueños  cumplidos.</p>
+        <button class="boton  border-0"> Donar</button>
     </div>
+   
+</div>
+<body >
+   
 
 
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Un dia para el Futuro</h1>
-            <p>Campañas dirigidas a niños y jovenes adolescentes de las comunidades cercanas a las plantas Volkswagen Mexico</p>
-            <button class="boton  border-0"> Donar</button>
+
+    <!-- section objetivos-->
+<div class="section-content container">
+
+    <div class="row container card-content">
+        <div class="col-12 col-sm-12 col-lg-6">
+            <h1 class="text-center">Con tu apoyo ayudarás a más de 2 mil alumnos mexicanos</h1>
+        </div>
+        <div class="col-12 col-sm-12 col-lg-6">
+            <img src="img/campaña-apoyo.png" alt="">
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- section donar-->
+<div class="section-content">
+    <div class="container">
+        <div class="row card-content">
+            <div class="col-md-12 col-lg-6 col-xs-12 text-center">
+                <img src="img/donar.png" alt="Imagen" class="img-fluid">
+            </div>
+            <div class="col-md-12 col-lg-6 col-xs-12 center ">
+                <h2> ¡Juntos, podemos hacer realidad estos sueños y transformar vidas!</h2>
+                <div class="donation-buttons">
+                    <button onclick="selectAmount(500)">500 MXN</button>
+                    <button onclick="selectAmount(1500)">1500 MXN</button>
+                    <button onclick="selectAmount(2500)">2500 MXN</button>
+                    <button onclick="selectAmount(3500)">3500 MXN</button>
+                    <button onclick="selectAmount(5000)">5000 MXN</button>
+                    <button onclick="selectAmount(7500)">7500 MXN</button>
+                    <button onclick="showCustomAmount()">Otro monto</button>
+                </div>
+                <div id="custom-amount">
+                    <label for="amount">Ingrese el monto:</label>
+                    <input type="number" id="amount" min="1">
+                </div>
+                <button class="confirmar" onclick="continueDonation()">Continuar</button>
+
+              
+            </div>
+            
+
+
         </div>
        
     </div>
-    
-
-
-
-
-
-            <div class="textcustom">
-                <div class="row center mt-5">
-            
-                    <div class="col mt-3">
-                        <h1>
-                            Nuestros Objetivos
-                        </h1>
-                        <p>Un Día para el Futuro contribuye activamente a la Agenda 2030 de la  ONU. A través de esta iniciativa, buscamos erradicar la pobreza, ofrecer  educación de calidad y reducir las desigualdades en las comunidades  mexicanas. A través de ti y grupo Volkswagen México estamos construyendo un futuro más  próspero y sostenible para todos.
-                        </p>
-                    </div>
-            
-            
-                    <div class="iconos">
-                        <div class="icono">
-                            <img src="img/icon-1.png" alt="" width="auto" height="60px">
-                            <p>Estudiantes Puebla y Guanajuato</p>
-                        </div>
-                        <div class="icono">
-                            <img src="img/icon-2.png" alt="" width="auto" height="60px">
-                            <p>Estudiantes de Secundaria y Bachillerato</p>
-                        </div>
-                    </div>
-                    
-                    
-                      
-                    
-                      
-                     
-                    </div>
-                </div>
-        </div>
-        
-
-
-  
-<div class="section-content">
-    <div class="container" style="gap: 60px;">
-        <div class="col-md-6">
-            <h2>Su Futuro esta  en tus manos</h2>
-            
-            <p>Sabemos que la educación es la clave para abrir puertas y crear un  futuro brillante.</p><p>
-
-                Con tu apoyo, estamos marcando una diferencia significativa en la vida  de estos jóvenes y en el progreso de sus comunidades, abriéndoles a  los mexicanos puertas a un mundo de oportunidades. </p>
-            <button type="button" style="width:180px; color: #DA5466;" class="buton  border-0"> <p class="butontext">Donar</p></button>
-        </div>
-        <div class="col-md-6 text-center">
-            <img src="img/campaña.png" alt="Imagen" class="img-fluid">
-        </div>
-    </div>
 </div>
 
-<div class="section-content">
-    <div class="container">
+<!-- section card-->
 
-        <div class="col-md-6 text-center">
-            <img src="img/bg-campaña.png" alt="Imagen" class="img-fluid">
-        </div>
-        <div class="col-md-6 info">
-            <h2>Un dia para el futuro 2024 </h2>
-            
-            <p>Este año el principal enfoque es la educación, reconociendo que es uan  herramienta fundamental para combatir la pobreza y brindar oportunidades de desarrollo.
-                </p></p>
-                Se busca ayudar a Secundaria y  Bachillerato de Puebla y Guanajuato.
-            </p>
-            
-          
-        </div>
-        
-    </div>
-</div>
-
-<div class="container center">
-
-
-<div class="col-md-12">
-
-    <img src="img/logovolws.png" alt="">
-</div>
-</div>
-
-
-<div class="section-content ">
+<div class="section-content  mb-4">
     <div class="container team">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="row card-content">
+            <div class="col-sm-6 col-xs-12 col-lg-6 col-12 " id="acerca">
+                <img src="img/bg-campaña.png" alt="Imagen" class="img-fluid" style="border-radius: 45px; color: #DA5466;">
+            </div>
+            <div class="col-sm-6 col-xs-12 col-lg-6 col-12 ">
+                <div class="text-team ">
+                    <h2 class="container">Bachillerato Vicente Suárez </h2>
+                    <p class="container">Adecuación de dos canchas de usos múltiples  <br>
+                        Pintura de salones, laboratorios, dirección y sala de maestros </p>
+                </div>
+                <div class="center">
+                   <button type="button " style="width:200px; color: #DA5466;" class="buton  border-0"> <p class="butontext">Saber mas</p></button> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="carousel-item">
+        <div class="row card-content">
+            <div class="col-sm-6 col-xs-12 col-lg-6 col-12 ">
+
+
+                <div class="text-team ">
+                    <h2 class="container">Un Día para el Futuro </h2>
+                    <p class="container">¡Crea tu cuenta con el fin de poder contribuir al futuro de México!  <br>
+                        Posteriormente, podrás donar y obtener tu Comprobante Fiscal Digital por  Internet (CFDI) </p>
+                </div>
+                <div class="center">
+                   <button type="button " style="width:200px; color: #DA5466;" class="buton  border-0"> <p class="butontext">Donar</p></button> 
+                </div>
+                
+            </div>
+            <div class="col-sm-6 col-xs-12 col-lg-6 col-12 " id="acerca">
+                <img src="img/bg-campaña.png" alt="Imagen" class="img-fluid" style="border-radius: 45px; color: #DA5466;">
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="carousel-item">
+        <div class="row container">
+            <div class="col-sm-6 col-xs-12 col-lg-6 col-12 " id="acerca">
+                <img src="img/bg-campaña.png" alt="Imagen" class="img-fluid" style="border-radius: 45px; color: #DA5466;">
+            </div>
+            <div class="col-sm-6 col-xs-12 col-lg-6 col-12 ">
+                <div class="text-team ">
+                    <h2 class="container">Un Día para el Futuro </h2>
+                    <p class="container">¡Crea tu cuenta con el fin de poder contribuir al futuro de México!  <br>
+                        Posteriormente, podrás donar y obtener tu Comprobante Fiscal Digital por  Internet (CFDI) </p>
+                </div>
+                <div class="center">
+                   <button type="button " style="width:200px; color: #DA5466;" class="buton  border-0"> <p class="butontext">Donar</p></button> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+</div>
+      
+
         
 
-        <div class="col-md-6" id="acerca">
-            <img src="img/team.png" alt="Imagen" class="img-fluid" style="border-radius: 45px; color: #DA5466;">
-        </div>
-        <div class="col-md-6 ">
-            <div class="text-team text-center text-card">
-                <h2 class="">Un Día para el Futuro </h2>
-                <p>¡Crea tu cuenta con el fin de poder contribuir al futuro de México!  
 
-                    Posteriormente, podrás donar y obtener tu Comprobante Fiscal Digital por  Internet (CFDI)</p>
-                    <div class="center">
-                        <button type="button " style="width:200px; color: #DA5466;" class="buton  border-0"> <p class="butontext">Donar</p></button> 
-                     </div>
-                     
-            </div>
-          
-        </div>
+        
     </div>
 
 
 
 </div>
+</div>
 
 
+
+<script type="module" src="js/donacion.js"></script><script></script>
 </body>
 
 <footer class="container-fluid">
     <div class="row ">
-      <div class="col-md-3 text-center logo-footer">
+      <div class="col-md-3 col-sm-3 col-12 text-center logo-footer">
         <img src="img/logo.png" alt="Logo" height="100px">
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 col-sm-2 col-6">
         <h2>Features</h2>
-        <ul>
-          <li>Fectures</li>
-          <li>Manager</li>
-          <li>Comunicación</li>
-          <li>Analytics</li>
-        </ul>
+        <div>
+          <p>Fectures</p>
+          <p>Manager</p>
+          <p>Comunicación</p>
+          <p>Analytics</p>
+        </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 col-sm-2 col-6">
         <h2>Historias</h2>
-        <ul>
-          <li>Blog</li>
-          <li>Noticias</li>
-          <li>Eventos</li>
-        </ul>
+          <p>Blog</p>
+          <p>Noticias</p>
+          <p>Eventos</p>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 col-sm-2 col-6">
         <h2>Redes Sociales</h2>
         <div class="d-flex">
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" /></svg> </a><p>Facebook</p>
@@ -217,20 +258,17 @@
           
          
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-3 col-6">
         <h2>Contacto</h2>
-        <ul>
-          <li>Dirección</li>
-          <li>Correo</li>
-          <li>Teléfono</li>
-        </ul>
+     
+          <p>Dirección</p>
+          <p>Correo</p>
+          <p>Teléfono</p>
+       
       </div>
     </div>
     
 </footer>
-<div class="dev container-fluid">
-    <p style="color: aliceblue;"><strong>Developer Websolution</strong></p>
 
-</div>
 
 </html>
