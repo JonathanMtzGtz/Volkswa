@@ -31,7 +31,7 @@
 .textcustom{
     
     align-items: center;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 .icono{
@@ -44,9 +44,10 @@
     padding: 50px 0;
     
 }
-.section-content .container {
-    display: flex;
-    align-items: center;
+.card-content {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
 }
 .center{
     text-align: center;
@@ -91,13 +92,13 @@ gap: 10px;
  border-radius: 45px;
  padding: 0px;
 }
-.text-team{
-    margin-left: 15px;
-}
+
 .text-card{
 
 margin-right:  140px;
 }
+
+
 
 
 .footer{
@@ -206,27 +207,27 @@ margin-right:  140px;
     align-items:normal ;
 }
 svg {
-  width: 35px; /* Ancho del SVG */
-  height: 35px; /* Alto del SVG */
+  width: 35px; 
+  height: 35px; 
 }
 .iconos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Crea dos columnas de igual anchura */
-  gap: 20px; /* Ajusta el espacio entre filas y columnas */
-  justify-content: center; /* Centra los elementos de la cuadrícula horizontalmente */
-  align-items: center; /* Centra los elementos de la cuadrícula verticalmente */
-  justify-items: center; /* Centra cada celda individual dentro de la cuadrícula */
-  width: 100%; /* Ajusta el ancho del contenedor al 100% del contenedor padre */
-  max-width: 960px; /* O un máximo que consideres apropiado para tu diseño */
-  margin: 0 auto; /* Centra el contenedor `.iconos` horizontalmente en la página */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
+  justify-content: center; 
+  align-items: center; 
+  justify-items: center; 
+  width: 100%; 
+  max-width: 960px; 
+  margin: 0 auto; 
 }
 
 .icono {
   display: flex;
-  align-items: center; /* Alinea verticalmente la imagen y el texto en el centro */
-  justify-content: start; /* Alinea el contenido al inicio de la 'caja' flex para mantener el icono a la izquierda */
-  gap: 10px; /* Espacio entre la imagen y el texto */
-  width: 100%; /* Asegura que `.icono` ocupe todo el ancho de la celda de la cuadrícula */
+  align-items: center;
+  justify-content: start; 
+   gap: 10px; 
+  width: 100%; 
 }
 
 .icono img {
@@ -240,3 +241,43 @@ svg {
 
 }
 
+
+@media (max-width: 768px) {
+  .hero-image {
+      background-image: url('../img/bg-hero-mo.png'); 
+     
+  }
+}
+@media (max-width: 768px) {
+  .hero-text {
+      padding: 10px; /* Agrega padding de 10px */
+      text-align: center; /* Centra el texto en el modo móvil */
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+     padding: 10px;
+      width: 100% !important;
+  }
+  .card-content{
+    text-align: center;
+    align-items: center;
+  }
+  .textcustom{
+    width: 100%;
+    padding: 10px;
+
+  }
+  .text-card{
+    margin-right: 0px;
+    padding: 10px;
+    padding-bottom: 20px;
+
+  }
+  .logo-footer img{
+    height: 70px;
+  }
+
+}
