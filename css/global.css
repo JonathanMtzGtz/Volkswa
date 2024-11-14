@@ -290,5 +290,8 @@ svg {
   .logo-footer img{
     height: 70px;
   }
+  .img-registro{
+   display: none;
+  }
 
 }
