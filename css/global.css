@@ -11,6 +11,26 @@
   font-family: Montserrat;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Usar diferentes pesos según el tipo de texto */
+h1 {
+  font-weight: 700; /* Negrita */
+}
+
+h2 {
+  font-weight: 600; /* Semi-negrita */
+}
+
+p {
+  font-weight: 400; /* Regular */
+}
+
+.light-text {
+  font-weight: 300; /* Ligero */
+}
 
 
 .hero-image {
@@ -21,7 +41,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-top: -110px;
+
     z-index: -1;
 
 }
@@ -38,7 +58,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: -110px;
+
   z-index: -1;
 }
 .hero-text {
@@ -116,6 +136,24 @@ gap: 10px;
   background-color: rgba(189, 0, 42, .06) !important;
   height: 50px;
 
+}
+/* Estilo para la flecha anterior */
+.carousel-control-prev-icon {
+  background-color: black; /* Cambiar color de fondo a negro */
+  border-radius: 50%; /* Opcional: redondear las flechas */
+  width: 60px;
+  height: 60px;
+}
+.text-movil{
+  text-align: center !important;
+}
+
+/* Estilo para la flecha siguiente */
+.carousel-control-next-icon {
+  background-color: black; /* Cambiar color de fondo a negro */
+  border-radius: 50%; /* Opcional: redondear las flechas */
+  width: 60px;
+  height: 60px;
 }
 
 .team{
@@ -281,6 +319,9 @@ svg {
   .desk{
     display: none !important;
   }
+  .pass-secret{
+    margin-top: 15%;
+  }
 }
 
 
@@ -322,11 +363,16 @@ svg {
   .movil{
     display: none !important;
   }
+   .pass-secret{
+   position: absolute;
+   top: 40%;
+  }
 }
 @media (max-width: 568px){
   .hide{
     display: none !important;
   }
+ 
 }
 
 
