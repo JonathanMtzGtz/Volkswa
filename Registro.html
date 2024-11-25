@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <title>Crear Cuenta</title>
   <!-- Bootstrap CSS -->
   <!-- Bootstrap CSS -->
@@ -71,7 +76,7 @@
         <label for="contraseña">Contraseña</label>
         <input type="password" class="form-control" id="password-input" placeholder="Ingresa tu contraseña">
       </div>
-      <button class="boton mt-4  border-0" type="button" onclick="checkPassword()">Enviar</button>
+      <button class="boton mt-4  border-0" type="button" id="boton_clave">Enviar</button>
     </div>
   </div>
   </div>
@@ -84,33 +89,53 @@
         <div class="logo-container">
           <a href="index.html"><img src="img/logosv.png" alt="Logo" class="logo" height="200px"></a>
         </div>
-        <form style="width: 80%;">
+        <form class="container-fluid myform" id="form">
           <h1 class="card-title mb-4">Crear Cuenta</h1>
           <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required  oninput="validar(this)">
           </div>
           <div class="form-group">
-            <label for="apellido">Apellido</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+            <label for="apellido">Apellido paterno</label>
+            <input type="text" class="form-control" id="apellido_paterno" placeholder="Ingresa tu apellido" required  oninput="validar(this)">
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido materno</label>
+            <input type="text" class="form-control" id="apellido_materno" placeholder="Ingresa tu apellido" required  oninput="validar(this)">
           </div>
           <div class="form-group">
             <label for="correo">Correo Electrónico</label>
-            <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico">
+            <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico" required>
           </div>
           <div class="form-group">
-            <label for="contraseña">Contraseña</label>
-            <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña">
+            <label for="contrasenia">Contraseña</label>
+            <div style="position: relative;">
+              <input type="password" class="form-control" id="contrasenia" placeholder="Ingresa tu contraseña" required>
+              <i class="toggle-visibility fas fa-eye" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;"></i>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="validar-contrasenia">Validar Contraseña</label>
+            <div style="position: relative;">
+              <input type="password" class="form-control" id="validar-contrasenia" placeholder="Confirma tu contraseña" required>
+              <i class="toggle-visibility fas fa-eye" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;"></i>
+            </div>
           </div>
           <div class="form-group">
             <label for="ciudad">Ciudad</label>
-            <input type="text" class="form-control" id="ciudad" placeholder="Ingresa tu ciudad">
+            <input type="text" class="form-control" id="ciudad" placeholder="Ingresa tu ciudad" required>
           </div>
           <div class="form-group">
             <label for="sucursal">Sucursal</label>
-            <input type="text" class="form-control" id="sucursal" placeholder="Ingresa tu sucursal">
+            <input type="text" class="form-control" id="sucursal" placeholder="Ingresa tu sucursal" required>
           </div>
-          <button type="submit" class="btn  btn-primary btn-block">Crear Cuenta</button>
+
+          <div class="form-group my-4 align-items-center">
+            <button id="btn_form" type="submit" class="btn  btn-primary btn-block">Crear Cuenta</button>
+          </div>
+
+          
           <div class="login-link text-center mt-4">
             <span style="background-color: #491818; padding: 0 10px;">o</span>
             <span class="px-2">Iniciar Sesión</span>
@@ -127,8 +152,9 @@
   </div>
   
 </div>
+<script src="js/registro.js"></script>
 <script>
-  function checkPassword() {
+ /* function checkPassword() {
     const passwordInput = document.getElementById('password-input').value;
     const correctPassword = 'VW3B7XzQ9';
     
@@ -138,11 +164,9 @@
     } else {
       alert('Contraseña incorrecta');
     }
-  }
+  }*/
 </script>
 <!-- Bootstrap JS y dependencias jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
