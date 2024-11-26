@@ -1,8 +1,8 @@
 $(document).ready(() => {
-const part2 = "http://localhost";
-const part1 = ":3001/api/token";
-//const part2 = "https://apirest-m";
-//const part1 = "ysql-ywx2.onrender.com/api/token";
+//const part2 = "http://localhost";
+//const part1 = ":3001/api/token";
+const part2 = "https://apirest-m";
+const part1 = "ysql-ywx2.onrender.com/api/token";
   const email = document.getElementById("correo");
   const pass = document.getElementById("contrasenia");
   const button = document.getElementById("login");

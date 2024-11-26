@@ -1,6 +1,7 @@
 $(document).ready(() => {
 const clave = document.getElementById("password-input");
-const link = "http://localhost:3001";
+const link = "https://apirest-mysql-ywx2.onrender.com";
+//const link = "http://localhost:3001";
 const loginClave = link+"/a"+"p"+"i/token/loginClave";
 const saveusuario = link+"/a"+"p"+"i/vweb/saveusuario";
 const botonClave = document.getElementById("boton_clave");
