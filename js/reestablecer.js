@@ -1,6 +1,7 @@
 $(document).ready(() => {
     var btn = document.getElementById("bnt_click");
-    const link = "http://localhost:3001";
+    //const link = "http://localhost:3001";
+    const link = "https://apirest-mysql-ywx2.onrender.com";
     const recuperarcontrasenia = link+"/a"+"p"+"i/vweb/recuperarcontrasenia";
     function generateRandomPassword(length) {
       const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -131,7 +132,7 @@ $(document).ready(() => {
           var data = {
           text: 'Hola te saludamos de Volkswagen',
            toEmail: email,
-          fromEmail: "dev.ti@grupoelcerezo.com",
+          fromEmail: "info@undiaparaelfuturo.com",
           html: Body
           }
         
