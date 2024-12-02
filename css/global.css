@@ -209,16 +209,7 @@ margin-right:  140px;
   .login-link span {
     position: relative;
   }
-  .login-link span::before,
-  .login-link span::after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 50%;
-    background-color: #ccc;
-    position: absolute;
-    top: 50%;
-  }
+  
   .login-link span::before {
     right: 10px;
     margin-right: 10px;
