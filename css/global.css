@@ -144,9 +144,6 @@ gap: 10px;
   width: 60px;
   height: 60px;
 }
-.text-movil{
-  text-align: center !important;
-}
 
 /* Estilo para la flecha siguiente */
 .carousel-control-next-icon {
@@ -277,13 +274,22 @@ svg {
   border-radius: 20px;
 
 }
+.btn{
+  background-color: #DA5466;
+  border-radius: 20px;
+}
 
 
 @media (max-width: 768px) {
   .hero-image {
       background-image: url('../img/bg-hero-mo.png'); 
+      
      
   }
+  .text-movil{
+    text-align: center !important;
+  }
+  
 
 }
 @media (max-width: 768px) {
@@ -329,7 +335,9 @@ svg {
   .img-registro{
    display: none;
   }
-
+  .TestModeBadge-container{
+    margin-bottom: 10px;
+  }
 
 }
 .movil img{
