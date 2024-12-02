@@ -71,7 +71,7 @@ const part1 = "ysql-ywx2.onrender.com/api/token";
           Swal.fire({
               position: "top-center",
               icon: "error",
-              title: "Hubo un error al intentar ingresar, reportar al correo info@omodaregionalartist.com",
+              title: "Hubo un error al intentar ingresar, reportar al correo kevin.martinez@hgroup.consulting",
               showConfirmButton: false,
               timer: 15000,
             });
