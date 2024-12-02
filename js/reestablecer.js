@@ -17,24 +17,31 @@ $(document).ready(() => {
     
     
         const Body = `
-        <div style="background-color: #ececec; padding: 0; margin: 0 auto; font-weight: 200; width: 100%!important;">
-          <p> </p>
-          <center>
-            <h2 style="color: #3b693c;">Recuperar contraseña</h2>
-          </center>
-          <br />
-          <table style="width: 600px; margin-left: auto; margin-right: auto; background-color: #ffffff; height: 165px;">
-            <tbody>
-              <tr style="height: 61px;">
-                <td style="width: 590px; background-color: #3b693c; text-align: center; height: 61px;" colspan="2">
-                  <h2><span style="color: #ffffff;"><strong>aqui esta es tu nueva contraseña: ${password}, si desea cambiarla, ya dentro de su perfil, podra realizarlo</strong></span></h2>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <p> </p>
-          <p> </p>
-        </div>
+
+<div style="background-color: #f9f9f9; padding: 20px; font-family: Arial, sans-serif; color: #333; line-height: 1.5; text-align: center; width: 100%; max-width: 600px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px;">
+    <div style="text-align: left;">
+      <img src="https://undiaparaelfuturo.com/img/logo.png" alt="Volkswagen México - Un Día para el Futuro" style="height: 50px; margin-bottom: 20px;">
+    </div>
+    <h2 style="font-size: 22px; color: #444;">Tu nueva contraseña</h2>
+    <p style="font-size: 16px; color: #555; margin: 20px 0;">
+      Hola, este mensaje es de la plataforma de <strong>Volkswagen México - Un Día para el Futuro</strong>.
+    </p>
+    <p style="font-size: 16px; color: #555; margin: 20px 0;">
+      Hemos generado automáticamente una nueva contraseña para ti:
+    </p>
+    <div style="font-size: 24px; font-weight: bold; color: #222; margin: 10px 0; padding: 10px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;">
+    ${password}
+    </div>
+    <p style="font-size: 16px; color: #555; margin: 20px 0;">
+      Si deseas cambiarla, haz clic en el siguiente enlace:
+    </p>
+
+    https://undiaparaelfuturo.com/cambiar-password.html
+    
+    <p style="font-size: 12px; color: #bbb; margin-top: 20px;">
+      © 2024 Volkswagen México - Un Día para el Futuro. Todos los derechos reservados.
+    </p>
+  </div>
       `;
       
     
@@ -136,7 +143,7 @@ $(document).ready(() => {
             }
           }
         
-          fetch(link+"/api/correo/sendEmail",options)
+          fetch(link+"/api/correo/sendEmailvw",options)
           .then(resp => resp.json())
           .then(resp => {
         console.log(resp)
@@ -157,6 +164,15 @@ $(document).ready(() => {
             timer: 10000,
           }); 
         }
+          })
+          .catch(error => {
+            Swal.fire({
+                position: "top-center",
+                icon: "error",
+                title: "Error al enviar la nueva contraseña, "+error+" volver a intentar, si el problema persiste reportar al correo info@undiaparaelfuturo.com",
+                showConfirmButton: false,
+                timer: 10000,
+              }); 
           })
         
             }
