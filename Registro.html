@@ -69,11 +69,12 @@
    <div class="d-flex justify-content-center align-items-center pass-secret"    >
    <div style="width: 800px;">
       <h1 class="text-movil mb-3">Bienvenido</h1>
-      <p>Para continuar, ingresa la contraseña corporativa <a href="http://">Mas informacion</a></p>
+      <p>Para continuar, ingresa la contraseña corporativa</p>
       <div class="form-group">
-        <label for="contraseña">Contraseña</label>
-        <input type="password" class="form-control" id="password-input" placeholder="Ingresa tu contraseña">
+        
+        <input type="password" class="form-control" id="password-input" placeholder="Ingresa la contraseña">
       </div>
+      <p> <a href="http://">Más información</a></p>
       <button class="boton mt-4  border-0" type="button" id="boton_clave">Enviar</button>
     </div>
   </div>
@@ -89,22 +90,27 @@
         </div>
         <form class="container-fluid myform" id="form">
           <h1 class="card-title mb-4">Crear Cuenta</h1>
+          
           <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required  oninput="validar(this)">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required oninput="validar(this)">
           </div>
+        
           <div class="form-group">
             <label for="apellido">Apellido paterno</label>
-            <input type="text" class="form-control" id="apellido_paterno" placeholder="Ingresa tu apellido" required  oninput="validar(this)">
+            <input type="text" class="form-control" id="apellido_paterno" placeholder="Ingresa tu apellido" required oninput="validar(this)">
           </div>
+        
           <div class="form-group">
             <label for="apellido">Apellido materno</label>
-            <input type="text" class="form-control" id="apellido_materno" placeholder="Ingresa tu apellido" required  oninput="validar(this)">
+            <input type="text" class="form-control" id="apellido_materno" placeholder="Ingresa tu apellido" required oninput="validar(this)">
           </div>
+        
           <div class="form-group">
             <label for="correo">Correo Electrónico</label>
             <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico" required>
           </div>
+        
           <div class="form-group">
             <label for="contrasenia">Contraseña</label>
             <div style="position: relative;">
@@ -120,32 +126,35 @@
               <i class="toggle-visibility fas fa-eye" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;"></i>
             </div>
           </div>
+        
           <div class="form-group">
             <label for="ciudad">Ciudad</label>
-            <input type="text" class="form-control" id="ciudad" placeholder="Ingresa tu ciudad" required>
+            <input type="text" class="form-control" id="ciudad" placeholder="Ingresa tu ciudad" >
           </div>
+          
           <div class="form-group">
             <label for="sucursal">Sucursal</label>
-            <input type="text" class="form-control" id="sucursal" placeholder="Ingresa tu sucursal" required>
+            <select class="form-control" id="sucursal" required>
+              <option value="" disabled selected>Selecciona tu sucursal</option>
+              <option value="Puebla">Puebla</option>
+              <option value="Silao">Silao</option>
+            </select>
           </div>
-          <select class="form-select" aria-label="Sucursal" >
-            <option selected>Selecciona tu Sucursal</option>
-            <option value="1">Sucursal-1</option>
-            <option value="2">Sucursal-2</option>
-            <option value="3">Sucursa-3</option>
-          </select>
-
-          <div class="form-group my-4 align-items-center">
-            <button id="btn_form" type="submit" class="btn  btn-primary btn-block">Crear Cuenta</button>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="terminos" name="terminos" required>
+              Acepto los <a href="ruta/a/terminos-y-condiciones" target="_blank">términos y condiciones</a>.
+            </label>
           </div>
-
           
-          <div class="login-link text-center mt-4">
-            <span style="background-color: #491818; padding: 0 10px;">o</span>
-            <span class="px-2">Iniciar Sesión</span>
-            <span style="background-color: #4d0d0d; padding: 0 10px;">o</span>
+        
+          <div class="form-group my-4 align-items-center">
+            <button id="btn_form" type="submit" class="btn btn-primary btn-block">Crear Cuenta</button>
           </div>
+        
+          
         </form>
+        
       </div>
     </div>
   </div>
