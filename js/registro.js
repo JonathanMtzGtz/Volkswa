@@ -60,7 +60,7 @@ contrasenia.addEventListener("change", () => {
         alert('La contraseña debe tener al menos 8 caracteres, incluyendo números y letras.');
         contrasenia.value = "";
     }
-})
+});
 
 validaRTtoggleVisibility();
 
