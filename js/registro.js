@@ -127,13 +127,13 @@ async function fnRegistro(e) {
                 timer: 4500
                 }) ;
                 setTimeout(() => {
-                    window.location.href = "Registro.html";
+                    window.location.href = "login.html";
                 },5000)
         }else{
             Swal.fire({
                 position: 'center',
                 icon: 'error',
-                title: "Algo fallo, vuelve a intentarlo, si el problema persiste, reporta al correo: mtzxx@hotmail.com",
+                title: "Algo fallo, vuelve a intentarlo, si el problema persiste, reporta al correo: info@undiaparaelfuturo.com",
                 showConfirmButton: true,
                 timer: 4500
                 }) 
@@ -233,7 +233,7 @@ botonClave.addEventListener("click", () => {
         Swal.fire({
             position: 'center',
             icon: 'error',
-            title: "Error al enviar la petición, volver a intentar, si persiste el problema reportar al correo: mtzxx@hotmail.com",
+            title: "Error al enviar la petición, volver a intentar, si persiste el problema reportar al correo: info@undiaparaelfuturo.com",
             showConfirmButton: true,
             timer: 5500
             }) 

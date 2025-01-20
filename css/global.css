@@ -76,6 +76,7 @@ p {
 }
 
 .iconos{
+  display: flex;
     display: center;
     justify-content: center;
   
