@@ -57,7 +57,7 @@ contrasenia.addEventListener("change", () => {
     var regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
     if (!regex.test(contrasenia.value)) {
-        alert('La contraseña debe tener al menos 8 caracteres, incluyendo números y letras.');
+        alert('La contraseña debe tener mas de 8 caracteres, incluyendo números y letras.');
         contrasenia.value = "";
     }
 });
