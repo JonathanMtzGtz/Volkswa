@@ -76,7 +76,7 @@ p {
 }
 
 .iconos{
-    display: flex;
+    display: center;
     justify-content: center;
   
 }
@@ -245,7 +245,7 @@ svg {
   height: 35px; 
 }
 .iconos {
-  display: grid;
+  display: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px; 
   justify-content: center; 
