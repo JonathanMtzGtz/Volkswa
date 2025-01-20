@@ -42,7 +42,7 @@ p {
     display: flex;
     align-items: center;
 
-    z-index: -1;
+    z-index: -0;
 
 }
 
@@ -77,8 +77,8 @@ p {
 
 .iconos{
   display: flex;
-    display: center;
-    justify-content: center;
+  justify-content: center;
+  align-items: center;  
   
 }
 .textcustom{
@@ -306,6 +306,9 @@ svg {
   .pass-secret{
     margin-top: 15%;
   }
+  .img-registro{
+    display: none;
+   }
 }
 
 
@@ -443,4 +446,45 @@ footer .footer-links a {
 
 footer .footer-links span {
   color: black;
+}
+.bg-a {
+  background-image: url('../img/campaña-apoyo.png');
+  background-size: cover;
+    background-position: center;
+    height: 480px;
+    border-radius:30px;
+
+}
+
+@media (max-width: 769px) {
+  .text-card{
+    margin-right: 0px !important;
+  }
+    
+}
+@media (max-width: 400px) {
+  .logo-1{
+    height: 30px !important;
+  }
+  .logo-2{
+    height: 30px !important;
+  }
+  .iconos{
+    
+    gap: 0px !important;
+  }
+  .icono{
+    justify-content: center !important;
+    gap: 0px !important;
+    margin-left: -10px;
+  }
+  .btn-donar{
+   display: block !important;
+  }
+    
+}
+.btn-donar{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
