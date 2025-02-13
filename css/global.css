@@ -47,7 +47,7 @@ p {
 }
 
 .bg-gracias {
-  background-image: url('../img/bg-gracias.png');
+  background-image: url('../img/Inicio.svg');
   background-size: cover;
   background-position: center;
   height: 810px;
@@ -483,6 +483,7 @@ footer .footer-links span {
   }
   .logo-2{
     height: 30px !important;
+    
   }
   .iconos{
     
@@ -502,4 +503,12 @@ footer .footer-links span {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.rr-pading{
+  padding-right: 1.7rem;
 }
