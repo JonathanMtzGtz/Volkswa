@@ -34,7 +34,7 @@ p {
 
 
 .hero-image {
-    background-image: url('../img/Hero-bg.png');
+    background-image: url('../img/Hero-bg1.png');
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -45,6 +45,7 @@ p {
     z-index: -0;
 
 }
+
 
 .bg-gracias {
   background-image: url('../img/Inicio.svg');
@@ -155,18 +156,25 @@ gap: 10px;
 }
 /* Estilo para la flecha anterior */
 .carousel-control-prev-icon {
-  background-color: black; /* Cambiar color de fondo a negro */
-  border-radius: 50%; /* Opcional: redondear las flechas */
-  width: 60px;
-  height: 60px;
+  background-image: url("../img/informe/back.svg") !important;
+  height: 25px !important;
+  color: #B9CCEC !important;
+ 
+
+}
+
+.carousel-control-prev {
+  left: -100px;
+}
+.carousel-control-next {
+  right: -100px;
 }
 
 /* Estilo para la flecha siguiente */
 .carousel-control-next-icon {
-  background-color: black; /* Cambiar color de fondo a negro */
-  border-radius: 50%; /* Opcional: redondear las flechas */
-  width: 60px;
-  height: 60px;
+
+  background-image: url("../img/informe/next.svg") !important;
+  height: 25px !important;
 }
 
 .team{
@@ -210,10 +218,7 @@ margin-right:  140px;
   .logo {
     max-height: 80px;
   }
-  h1{
-      font-family: inherit;
-      font-size: 60px;
-  }
+ 
   
   .login-link {
     text-align: center;
@@ -231,7 +236,19 @@ margin-right:  140px;
     left: 10px;
     margin-left: 10px;
   }
+  .hero-image-informe {
+    background-image: url('../img/informe/bg-hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+    display: flex;
+    align-items: center;
 
+    z-index: -1;
+    margin-top: -120px;
+
+}
 
   .boton{
     width: 180px;
@@ -316,7 +333,7 @@ svg {
    
   }
   .desk{
-    display: none !important;
+    
   }
   .pass-secret{
     margin-top: 15%;
@@ -357,13 +374,15 @@ svg {
   .TestModeBadge-container{
     margin-bottom: 10px;
   }
-
-}
+  .hero-text {
+   padding: 20px !important; 
+  }
 .movil img{
   width: 100%;
 }
+}
 
-@media (min-width: 769px){
+@media (min-width: 768px){
   .movil{
     display: none !important;
   }
@@ -511,4 +530,20 @@ footer .footer-links span {
 
 .rr-pading{
   padding-right: 1.7rem;
+}
+.text-impacto{
+  font-weight: 600;
+  font-size: 40px;
+}
+@media (max-width: 769px){
+  .text-impacto{
+    font-weight: 600 !important;
+    font-size: 35px !important;
+  }
+  video{
+    width: 90% !important;
+  }
+}
+@media (max-width: 568px){
+  
 }
