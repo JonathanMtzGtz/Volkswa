@@ -154,28 +154,31 @@ gap: 10px;
   height: 50px;
 
 }
-/* Estilo para la flecha anterior */
-.carousel-control-prev-icon {
-  background-image: url("../img/informe/back.svg") !important;
-  height: 25px !important;
-  color: #B9CCEC !important;
- 
 
+
+
+  /* Ajustes generales */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-.carousel-control-prev {
-  left: -100px;
-}
-.carousel-control-next {
-  right: -100px;
+/* Espaciado entre imágenes en PC */
+.d-md-flex img {
+    max-width: 80%;
+    height: auto;
+    padding-bottom: 50px;
 }
 
-/* Estilo para la flecha siguiente */
+/* Controles del carrusel más sutiles */
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-
-  background-image: url("../img/informe/next.svg") !important;
-  height: 25px !important;
+    filter: invert(1);
 }
+
+
+
 
 .team{
 
@@ -238,15 +241,12 @@ margin-right:  140px;
   }
   .hero-image-informe {
     background-image: url('../img/informe/bg-hero.png');
-    background-size: cover;
-    background-position: center;
-    height: 800px;
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    z-index: -1;
-    margin-top: -120px;
+    height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
 
 }
 
@@ -546,4 +546,71 @@ footer .footer-links span {
 }
 @media (max-width: 568px){
   
+}
+
+
+ /* IMÁGENES RESPONSIVAS */
+ .img-responsive {
+  width: 48%;
+  padding: 10px;
+}
+
+/* VIDEO RESPONSIVO */
+.video-responsive {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* BOTÓN PERSONALIZADO */
+.btn-custom {
+  display: inline-block;
+  background: #DA5466;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btn-custom:hover {
+  background: #db4357;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .hero-image-informe {
+      height: 30vh;
+  }
+
+  .hero-text h1 {
+      font-size: 2rem;
+  }
+
+  .img-responsive {
+      width: 100%;
+  }
+}
+
+
+.testimonio {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.testimonio img {
+  max-width: 100%;
+  height: auto;
+}
+
+.comillas {
+  margin-bottom: 10px;
+}
+
+.testimonio-texto {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.testimonio-rol {
+  color: #666;
+  font-size: 0.9rem;
 }
