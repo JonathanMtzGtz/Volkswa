@@ -45,6 +45,17 @@ p {
     z-index: -0;
 
 }
+.hero-image-pri{
+  background-image: url('../img/bg-hero-mo.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    z-index: -0;
+}
 
 
 .bg-gracias {
@@ -171,11 +182,7 @@ gap: 10px;
     padding-bottom: 50px;
 }
 
-/* Controles del carrusel más sutiles */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1);
-}
+
 
 
 
@@ -189,7 +196,7 @@ gap: 10px;
 
 .text-card{
 
-margin-right:  140px;
+padding: 30px;
 }
 
 
@@ -210,6 +217,7 @@ margin-right:  140px;
  
   .card {
     height: 100%;
+    width: 100%;
   }
   .logo-container {
     position: absolute;
@@ -321,19 +329,25 @@ svg {
   }
   .text-movil{
     text-align: center !important;
+    padding: 20px;
   }
   
+  .login{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+  }
 
 }
 @media (max-width: 768px) {
   .hero-text {
-      padding: 10px; /* Agrega padding de 10px */
+      padding: 20px; /* Agrega padding de 10px */
       text-align: center; /* Centra el texto en el modo móvil */
       width: 100%;
    
   }
   .desk{
-    
+    display: none;
   }
   .pass-secret{
     margin-top: 15%;
@@ -341,6 +355,7 @@ svg {
   .img-registro{
     display: none;
    }
+   
 }
 
 
@@ -380,16 +395,27 @@ svg {
 .movil img{
   width: 100%;
 }
+ol{
+  text-align: left !important;
+ }
+ .team{
+  padding: 15px;
+
+ }
+ p,h2{
+  text-align: center !important;
+ }
 }
 
 @media (min-width: 768px){
-  .movil{
-    display: none !important;
-  }
+ .movil{
+  display: none;
+ }
    .pass-secret{
    position: absolute;
    top: 40%;
   }
+
 }
 @media (max-width: 568px){
   .hide{
@@ -398,10 +424,17 @@ svg {
  
 }
 
+@media (min-width:769px  ) {
+  .slide-galeria{
+    display: none !important;
+  }
+  
+}
 
 .login{
 
  height: 100vh;
+
 }
 
 /* Donacion*/
@@ -494,6 +527,9 @@ footer .footer-links span {
   .text-card{
     margin-right: 0px !important;
   }
+  .hide{
+    display: none !important;
+  }
     
 }
 @media (max-width: 400px) {
@@ -531,21 +567,46 @@ footer .footer-links span {
 .rr-pading{
   padding-right: 1.7rem;
 }
-.text-impacto{
-  font-weight: 600;
-  font-size: 40px;
-}
+
 @media (max-width: 769px){
-  .text-impacto{
-    font-weight: 600 !important;
-    font-size: 35px !important;
-  }
+ .text-card, h2{
+  margin-top: 10px;
+ 
+ }
+ h2{
+  text-align: center;
+ }
   video{
     width: 90% !important;
   }
+  .card-content{
+    text-align: center;
+  }
+  ol{
+    text-align: left;
+  }
+
+}
+#card-1{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+
+@media (max-width:1023) {
+
+  
 }
 @media (max-width: 568px){
-  
+  .bg-a{
+    height: 300px !important;
+  }
+  .buton-bien{
+    text-align: center;
+    align-items: center;
+
+  }
+
 }
 
 
@@ -573,6 +634,11 @@ footer .footer-links span {
 }
 .btn-custom:hover {
   background: #db4357;
+}
+
+
+.btn-primary{
+  border-color: white !important;
 }
 
 /* MEDIA QUERIES */
@@ -613,4 +679,29 @@ footer .footer-links span {
 .testimonio-rol {
   color: #666;
   font-size: 0.9rem;
+}
+
+
+.button-container {
+  width: 300px;  /* Ajusta el ancho del contenedor */
+  margin: 0 auto;  /* Centra el botón si lo deseas */
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+ 
+}
+
+.carousel-indicators .active {
+  background-color: white;
+}
+.carousel-indicators{
+  gap: 10px;
+}
+.img-carousel {
+  height: 400px; /* Cambia a 1080px si quieres Full HD */
+  object-fit: cover; /* Mantiene proporción y recorta el exceso */
 }

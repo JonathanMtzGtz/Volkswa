@@ -16,34 +16,43 @@
   <script src="js/bootstrap.bundle.js"></script>
 </head>
 <div class="navbar-container">
-  <nav  class="navbar navbar-expand-lg navbar-light  navbar-transparent" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-3">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <a class="navbar-brand" href="#">
-              <img src="img/logo.png" alt="Logo" width="auto" height="80px" class="d-inline-block align-top logo-1">
-              
-              
+          <!-- Logo principal -->
+          <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="Logo" height="60px" class="d-inline-block align-top">
           </a>
-          <img src="img/logovolws2.png" alt="logo2" width="auto" height="80px" class="d-inline-block align-top logo-2">
-              
+
+          <!-- Segundo Logo -->
+          <a href="index.html">
+              <img src="img/logovolws2.png" alt="Logo2" height="60px" class="d-inline-block align-top d-none d-lg-block">
           </a>
+
+          <!-- Botón de menú hamburguesa en móvil -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- Menú -->
           <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
+              <ul class="navbar-nav ms-auto text-center">
                   <li class="nav-item">
-                      <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                      <a class="nav-link  " href="index.html">Inicio</a>
                   </li>
-                  
                   <li class="nav-item">
                       <a class="nav-link" href="campañas.html">Campañas</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="login.html">Login</a>
+                      <a class="nav-link " href="informe.html">Informe</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active" href="Registro.html">Registrarse</a>
+                      <a class="nav-link " href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="Registro.html">Registrarse</a>
+                      <li class="nav-item">
+                        <a class="nav-link " href="privacidad.html">Privacidad</a>
+                    </li>
                   </li>
               </ul>
           </div>
@@ -60,30 +69,30 @@
 
 
   <div class="row">
-    <div class="col-md-12 col-12 col-lg-6 p-0 img-registro">
-      <div class="img-container">
+    <div class="col-lg-5  hide p-0 img-registro">
+      <div class="img-container card bg-light">
        
       </div>
     </div>
       <!-- Card para ingresar contraseña -->
-  <div class="col-md-12 col-12 col-lg-6 p-4 " id="card-1">
-   <div class="d-flex justify-content-center align-items-center pass-secret"    >
-   <div style="width: auto;">
+  <div class="col-12 col-lg-7 p-4 login " id="card-1">
+   <div class="d-flex justify-content-center align-items-center pass-secret "    >
+   <div class="buton-bien">
       <h1 class="text-movil mb-3">Bienvenido</h1>
       <p>Para continuar, ingresa la contraseña corporativa</p>
       <div class="form-group">
         
         <input type="password" class="form-control" id="password-input" placeholder="Ingresa la contraseña">
       </div>
-      <p> <a href="http://">Más información</a></p>
-      <button class="boton mt-4  border-0" type="button" id="boton_clave">Enviar</button>
+      <p> <a href="privacidad.html">Más información</a></p>
+      <button class="boton  mt-4  border-0" type="button" id="boton_clave">Enviar</button>
     </div>
   </div>
   </div>
 
 
 
-  <div class="col-md-12 col-lg-6 p-0" id="crear-cuenta" style="display: none;">
+  <div class="col-md-12 col-lg-7 p-4" id="crear-cuenta" style="display: none;">
     <div class="card bg-light">
       <div class="card-body d-flex align-items-center justify-content-center">
         <div class="logo-container">
@@ -144,7 +153,7 @@
           <div class="form-group">
             <label>
               <input type="checkbox" id="terminos" name="terminos" required>
-              Acepto los <a href="#" target="_blank">términos y condiciones</a>.
+              Acepto los <a href="privacidad.html" target="_blank">términos y condiciones</a>.
             </label>
           </div>
           
