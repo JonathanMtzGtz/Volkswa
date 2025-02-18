@@ -83,10 +83,25 @@ p {
 
   z-index: 0;
 }
+
+.hero-image-2::before{
+  content:'';
+     position: absolute;
+        top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: rgba(0,0,0,0.4);
+     z-index: 0;
+}
+
+
+
 .hero-text {
     color: black;
     padding-left: 100px;
     width: 650px;
+    z-index: 2;
 }
 .hero-text-2 {
   color: black;
@@ -394,6 +409,7 @@ svg {
   }
 .movil img{
   width: 100%;
+  padding: 20px;
 }
 ol{
   text-align: left !important;
@@ -551,12 +567,15 @@ footer .footer-links span {
   }
   .btn-donar{
    display: block !important;
+    margin-left: 7%;
+
   }
     
 }
 .btn-donar{
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
+  align-items: center !important;
   gap: 10px;
 }
 
@@ -593,10 +612,7 @@ footer .footer-links span {
   justify-content: center;
 }
 
-@media (max-width:1023) {
 
-  
-}
 @media (max-width: 568px){
   .bg-a{
     height: 300px !important;
@@ -605,6 +621,17 @@ footer .footer-links span {
     text-align: center;
     align-items: center;
 
+  }
+  .bt-gracias{
+    text-align: center;
+  }
+  .text-gracias,h1{
+    text-align: center;
+  }
+  .img-carousel {
+    height: 280px !important; /* Cambia a 1080px si quieres Full HD */
+    object-fit: cover;
+    width: 100%; /* Mantiene proporción y recorta el exceso */
   }
 
 }
@@ -696,12 +723,31 @@ footer .footer-links span {
 }
 
 .carousel-indicators .active {
-  background-color: white;
+  background-color: #DA5466;
 }
 .carousel-indicators{
   gap: 10px;
 }
 .img-carousel {
-  height: 400px; /* Cambia a 1080px si quieres Full HD */
-  object-fit: cover; /* Mantiene proporción y recorta el exceso */
+  height: 500px; /* Cambia a 1080px si quieres Full HD */
+  object-fit: cover;
+  width: 100%; /* Mantiene proporción y recorta el exceso */
+}
+footer a{
+  text-decoration-line: none;
+  color: black;
+  
+}
+.privacidad {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacidad iframe {
+  width: 100%;
+  height: 100vh;
+  display: block;
 }
