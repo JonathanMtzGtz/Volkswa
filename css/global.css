@@ -785,6 +785,11 @@ footer a{
   .privacidad {
       height: 80vh; 
   }
+  .btn-pdf{
+    width: 90px;
+    height: 40px;
+    font-size: 10px;
+   }
 
 
 
@@ -799,4 +804,6 @@ footer a{
 
 
 }
+
+
 
