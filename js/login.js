@@ -41,8 +41,8 @@ const part1 = "ysql-ywx2.onrender.com/api/token";
       fetch(part2+part1+"/loginUsuariovw",options)
       .then(resp => resp.json())
       .then(resp => {
-          console.log(resp);
-          if (resp.message == "User not found" ||  resp.message == "Incorrect password") {
+          console.log(resp.message);
+          if (resp.message == "User not found" ||  resp.message == "Incorrect password" || resp.message == "Error logging in") {
               Swal.fire({
                   position: "top-center",
                   icon: "error",
@@ -63,7 +63,7 @@ const part1 = "ysql-ywx2.onrender.com/api/token";
                   timer: 1500,
                 });
                 setTimeout(() => {
-  window.location.href = "campañas.html";
+  //window.location.href = "campañas.html";
                 },2000)
           }
       })
