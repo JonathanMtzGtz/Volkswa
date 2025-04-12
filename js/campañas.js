@@ -1,1 +1,34 @@
-function _0x3ed7(_0xf6359a,_0x3f3eaf){var _0x282c40=_0x282c();return _0x3ed7=function(_0x3ed76f,_0x12db62){_0x3ed76f=_0x3ed76f-0x1e2;var _0x1afbf2=_0x282c40[_0x3ed76f];return _0x1afbf2;},_0x3ed7(_0xf6359a,_0x3f3eaf);}var _0x185466=_0x3ed7;(function(_0x132558,_0x401e77){var _0x66c710=_0x3ed7,_0x1074f0=_0x132558();while(!![]){try{var _0x1b59c7=parseInt(_0x66c710(0x1ee))/0x1*(parseInt(_0x66c710(0x1f0))/0x2)+parseInt(_0x66c710(0x1e5))/0x3*(parseInt(_0x66c710(0x1e6))/0x4)+-parseInt(_0x66c710(0x1f3))/0x5*(-parseInt(_0x66c710(0x1e2))/0x6)+-parseInt(_0x66c710(0x1eb))/0x7*(parseInt(_0x66c710(0x1e4))/0x8)+parseInt(_0x66c710(0x1e8))/0x9*(parseInt(_0x66c710(0x1e3))/0xa)+-parseInt(_0x66c710(0x1ea))/0xb*(parseInt(_0x66c710(0x1f2))/0xc)+parseInt(_0x66c710(0x1e9))/0xd*(-parseInt(_0x66c710(0x1e7))/0xe);if(_0x1b59c7===_0x401e77)break;else _0x1074f0['push'](_0x1074f0['shift']());}catch(_0x171a7f){_0x1074f0['push'](_0x1074f0['shift']());}}}(_0x282c,0x63529),$(document)[_0x185466(0x1f1)](()=>{var _0x474071=_0x185466;console['log'](sessionStorage[_0x474071(0x1ed)](_0x474071(0x1f4))),!sessionStorage[_0x474071(0x1ed)](_0x474071(0x1f4))&&(window[_0x474071(0x1ec)]['href']=_0x474071(0x1ef));}));function _0x282c(){var _0x184807=['location','getItem','594091ZaOPYR','login.html','2QoeinP','ready','1311972OWXoiq','20930LxwSqV','token','348qbxLwe','30lJpohj','13432iQEQoN','21UImAOP','190244WHWIDa','7244818lnhTio','1621422fcPgnh','13GewSbm','11mrywxb','2821iXVIrm'];_0x282c=function(){return _0x184807;};return _0x282c();}
+// campañas.js - Lógica específica para la página de campañas
+
+/**
+ * Inicializa la página de campañas
+ */
+function initCampanasPage() {
+  // Verificar autenticación
+  if (!isLoggedIn() && !isOnPublicPage()) {
+      window.location.href = "login.html";
+      return;
+  }
+
+  // Aquí va la lógica específica de la página de campañas
+  console.log("Página de campañas inicializada");
+  
+  // Ejemplo: Cargar datos de campañas
+  loadCampaignsData();
+}
+
+/**
+* Carga los datos de las campañas (ejemplo)
+*/
+function loadCampaignsData() {
+  // Implementar lógica para cargar datos de campañas
+  // desde tu API o fuente de datos
+  console.log("Cargando datos de campañas...");
+  
+  // Aquí iría tu código para cargar y mostrar las campañas
+}
+
+// Inicializar cuando el DOM esté listo
+$(document).ready(() => {
+  initCampanasPage();
+});

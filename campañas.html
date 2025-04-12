@@ -1,452 +1,404 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donar - Un Día para el Futuro</title>
+    <meta name="description" content="Apoya nuestra campaña educativa para estudiantes en Puebla y Guanajuato. Tu donación hace la diferencia.">
+    <title>Donar - Un Día para el Futuro | Educación para jóvenes mexicanos</title>
+    
+    <!-- Preload de fuentes y recursos críticos -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/global.css" as="style">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css/global.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Donar - Un Día para el Futuro">
+    <meta property="og:description" content="Apoya nuestra campaña educativa para estudiantes en Puebla y Guanajuato">
+    <meta property="og:image" content="img/social-share.jpg">
+    <meta property="og:url" content="https://www.undiaparaelfuturo.com/campañas.html">
+    <meta name="twitter:card" content="summary_large_image">
 
 
+     <!-- Preload de recursos críticos -->
+     <link rel="preload" href="css/bootstrap.min.css" as="style">
+     <link rel="preload" href="css/global.css" as="style">
+     <link rel="preload" href="js/bootstrap.bundle.min.js" as="script">
+     
+     <!-- Favicon y meta tags para redes sociales -->
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+     <meta property="og:title" content="Volkswagen México - Un Día para el Futuro">
+     <meta property="og:description" content="Campaña educativa para comunidades cercanas a las plantas Volkswagen de México">
+     <meta property="og:image" content="img/social-share.jpg">
+     <meta property="og:url" content="https://www.undiaparaelfuturo.com">
+     <meta name="twitter:card" content="summary_large_image">
+     
+     <!-- Hojas de estilo -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="css/global.css">
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <!-- Fuentes de Google optimizadas -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<div class="navbar-container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-3">
-        <div class="container-fluid">
-            <!-- Logo principal -->
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Logo" height="60px" class="d-inline-block align-top">
-            </a>
-
-            <!-- Segundo Logo -->
-            <a href="index.html">
-                <img src="img/logovolws2.png" alt="Logo2" height="60px" class="d-inline-block align-top d-none d-lg-block">
-            </a>
-
-            <!-- Botón de menú hamburguesa en móvil -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menú -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item">
-                        <a class="nav-link  " href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="campañas.html">Campañas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="informe.html">Informe</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Registro.html">Registrarse</a>
-                       
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-
-
-<div class="hero-image-2">
-    <div class="hero-text text-white">
-        <h1>Campaña 2025</h1>
-        <p class="justify">Nos enfocamos en la educación, reconociendo que es una herramienta fundamental que abre puertas a los
-            mexicanos. 
-            </p>
-            <p>Nuestra campaña apoya a estudiantes de secundaria y bachillerato en Puebla y Guanajuato, para
-            construir un futuro lleno de posibilidades y sueños cumplidos.</p>
-            <a href="#campañas" class="buton border-0" style="display: inline-block; width: 180px; color: #f5f5f5; text-align: center; padding: 10px 20px; text-decoration: none;  border-radius: 4px; margin-bottom: 16px;">Dona ahora</a>
-    </div>
-
-</div>
-
 <body>
+    <!-- Barra de navegación -->
+    <header class="sticky-top" id="navbar-container"></header>
 
-
-
-
-    <!-- section objetivos-->
-    <div class="section-content container">
-        <div class="col-12 col-sm-12 col-lg-6 movil">
-            <img class="img-fluid" src="img/campaña-apoyo.png" alt="">
-        </div>
-        <div class="row container card-content">
-            <div class="col-12 col-sm-12 col-lg-6">
-                <h2 class="text-center mt-3">Con tu apoyo ayudarás a más de <br> 2 mil alumnos mexicanos</h2>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-6 desk">
-                <img class="img-fluid" src="img/campaña-apoyo.png" alt="">
-            </div>
-
-        </div>
-    </div>
-
-
-
-    <!-- section donar-->
-     <section id="campañas">
-    <div class="section-content" >
+    <!-- Hero Section -->
+    <section class="campaign-hero">
         <div class="container">
-            <div class="row card-content">
-                <div class="col-md-12 col-lg-6 col-xs-12 text-center">
-                    <img src="img/donar-1.png" alt="Imagen" class="img-fluid">
-                </div>
-                <div class="col-md-12 col-lg-6 col-xs-12 center ">
-                    <h2 class="mt-3 mb-4"> ¡Juntos, podemos hacer realidad estos sueños y transformar vidas!</h2>
-                    <script async src="https://js.stripe.com/v3/buy-button.js">
-                    </script>
-
-                    <div class="btn-donar">
-                        <div class="stripe-button-container mb-3" style="width: 300px; overflow: hidden;">
-                            <stripe-buy-button buy-button-id="buy_btn_1QPSY5LgWKNxxXI78KueQYlV"
-                                publishable-key="pk_test_51QMuUOLgWKNxxXI7ywHDZ2ql9wvy7zW7GK5E7oVeILYwkj3PamCXjr9I1zZmFBCzLhUSQYUhLgN1FnzW2XuX62AG00e3xuImxY">
-                            </stripe-buy-button>
-                        </div>
-                  
-                    
-                        <div class="stripe-button-container  mb-3" style="width: 300px; overflow: hidden;">
-                             <stripe-buy-button buy-button-id="buy_btn_1QPScELgWKNxxXI7ygyAj4Vq"
-                                publishable-key="pk_test_51QMuUOLgWKNxxXI7ywHDZ2ql9wvy7zW7GK5E7oVeILYwkj3PamCXjr9I1zZmFBCzLhUSQYUhLgN1FnzW2XuX62AG00e3xuImxY">
-                             </stripe-buy-button>
-                         </div>
-                </div>
-
-                <div class="btn-donar">
-                  
-                        <div class="stripe-button-container  mb-3" style="width: 300px; overflow: hidden;">
-                            <stripe-buy-button buy-button-id="buy_btn_1QPSgyLgWKNxxXI7qUT4CspY"
-                            publishable-key="pk_test_51QMuUOLgWKNxxXI7ywHDZ2ql9wvy7zW7GK5E7oVeILYwkj3PamCXjr9I1zZmFBCzLhUSQYUhLgN1FnzW2XuX62AG00e3xuImxY">
-                        </stripe-buy-button>
-                        </div>
-                        
-                        <div class="stripe-button-container  mb-3" style="width: 300px; overflow: hidden;">
-                            <stripe-buy-button buy-button-id="buy_btn_1QPSn8LgWKNxxXI7nwZHZg64"
-                            publishable-key="pk_test_51QMuUOLgWKNxxXI7ywHDZ2ql9wvy7zW7GK5E7oVeILYwkj3PamCXjr9I1zZmFBCzLhUSQYUhLgN1FnzW2XuX62AG00e3xuImxY">
-                        </stripe-buy-button>
-                        </div>
-                </div>
-
-                <div class="btn-donar">
-
-
-                  <div  class="stripe-button-container  mb-3" style="width: 300px; overflow: hidden;">
-                    <stripe-buy-button buy-button-id="buy_btn_1QPSsKLgWKNxxXI7GaPzFHF0"
-                    publishable-key="pk_test_51QMuUOLgWKNxxXI7ywHDZ2ql9wvy7zW7GK5E7oVeILYwkj3PamCXjr9I1zZmFBCzLhUSQYUhLgN1FnzW2XuX62AG00e3xuImxY">
-                </stripe-buy-button>
-                  </div>
-
-                  <div  class="stripe-button-container  BuyButton-ButtonText mb-3" style="width: 300px; overflow: hidden; text-align: center;">
-                    <stripe-buy-button buy-button-id="buy_btn_1QPSv2LgWKNxxXI7bEyYoFvs"
-                    publishable-key="pk_test_51QMuUOLgWKNxxXI7ywHDZ2ql9wvy7zW7GK5E7oVeILYwkj3PamCXjr9I1zZmFBCzLhUSQYUhLgN1FnzW2XuX62AG00e3xuImxY">
-                </stripe-buy-button>
-                  </div>
-                </div>
-
-                <div class="btn-donar"> 
-
-
-                  <div  class="stripe-button-container hosted-buy-button-text  mb-3" style="width: 300px; overflow: hidden; text-align: center;">
-                    <stripe-buy-button buy-button-id="buy_btn_1QPT5MLgWKNxxXI7KcwX7X0R"
-                    publishable-key="pk_test_51QMuUOLgWKNxxXI7ywHDZ2ql9wvy7zW7GK5E7oVeILYwkj3PamCXjr9I1zZmFBCzLhUSQYUhLgN1FnzW2XuX62AG00e3xuImxY">
-                </stripe-buy-button>
-                  </div>
-                   
-
-               
+            <div class="hero-content">
+                <h1 class="hero-title">Campaña 2025</h1>
                 
-                <div id="custom-amount">
-                    <label for="amount">Ingrese el monto:</label>
-                    <input type="number" id="amount" min="1">
-                </div>
-
+                <p class="hero-text">Nos enfocamos en la educación, reconociendo que es una herramienta fundamental que abre puertas a los mexicanos. <br> <br> Nuestra campaña apoya a estudiantes de secundaria y bachillerato en Puebla y Guanajuato, para construir un futuro lleno de posibilidades y sueños cumplidos.</p>
+                <a href="#donar" class="btn btn-primary btn-lg">Dona ahora</a>
             </div>
-
-            </div>
-
-
-
         </div>
+    </section>
 
-    </div>
-    </div>
-</section>
+    <!-- Sección de Impacto -->
+    <section class="impact-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="img/campaña-apoyo.png" alt="Estudiantes beneficiados" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1 py-4">
+                    <h2 class="">Con tu apoyo ayudarás a más de <span class="highlight">2,000 alumnos</span> mexicanos</h2>
+                    <p class="impact-text">Cada donación contribuye directamente a mejorar las condiciones educativas de jóvenes en comunidades vulnerables, proporcionándoles herramientas y espacios adecuados para su desarrollo académico.</p>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- section card-->
-
-    <div class="section-content  mb-4">
-        <div class="container team">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleControls" data-slide-to="0" ></li>
-                    <li data-target="#carouselExampleControls" data-slide-to="1" ></li>
+    <!-- Sección de Donación -->
+    
+    <section id="donar" class="donation-section">
+        <div class="container">
+            <div class="donation-card">
+                <div class="donation-header">
+                    <h4 class="section-title">¡Juntos, podemos hacer realidad estos sueños y transformar vidas!</h4>
+                    <p class="section-description">Tu contribución hace la diferencia. Selecciona el monto que deseas donar:</p>
+                </div>
                 
-                  </ol>
+                <div class="donation-options">
+                    <div class="donation-grid">
+                        <!-- Botón $500 -->
+                        <a href="https://donate.stripe.com/test_bIY4hYeKOd744LK9AB" class="donation-option">
+                            <span class="donation-amount">$500</span>
+                            <span class="donation-currency">MXN</span>
+                            <span class="donation-text">Donar ahora</span>
+                        </a>
+                        
+                        <!-- Botón $1,500 -->
+                        <a href="https://checkout.stripe.com/pay/[SESSION_ID_1500]" class="donation-option">
+                            <span class="donation-amount">$1,500</span>
+                            <span class="donation-currency">MXN</span>
+                            <span class="donation-text">Donar ahora</span>
+                        </a>
+                        
+                        <!-- Botón $2,500 -->
+                        <a href="https://checkout.stripe.com/pay/[SESSION_ID_2500]" class="donation-option">
+                            <span class="donation-amount">$2,500</span>
+                            <span class="donation-currency">MXN</span>
+                            <span class="donation-text">Donar ahora</span>
+                        </a>
+                        
+                        <!-- Botón $3,500 -->
+                        <a href="https://checkout.stripe.com/pay/[SESSION_ID_3500]" class="donation-option">
+                            <span class="donation-amount">$3,500</span>
+                            <span class="donation-currency">MXN</span>
+                            <span class="donation-text">Donar ahora</span>
+                        </a>
+                        
+                        <!-- Botón $5,000 -->
+                        <a href="https://checkout.stripe.com/pay/[SESSION_ID_5000]" class="donation-option">
+                            <span class="donation-amount">$5,000</span>
+                            <span class="donation-currency">MXN</span>
+                            <span class="donation-text">Donar ahora</span>
+                        </a>
+                        
+                        <!-- Botón $7,500 -->
+                        <a href="https://checkout.stripe.com/pay/[SESSION_ID_7500]" class="donation-option">
+                            <span class="donation-amount">$7,500</span>
+                            <span class="donation-currency">MXN</span>
+                            <span class="donation-text">Donar ahora</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Botón de cantidad personalizada -->
+                    <div class="custom-amount-container">
+                        <a href="https://checkout.stripe.com/pay/[SESSION_ID_CUSTOM]" class="custom-amount">
+                            <span class="donation-label">Otra cantidad</span>
+                            <span class="donation-hint">Especifica el monto</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="donation-security">
+                    <div class="security-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>Pagos seguros con Stripe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    <!-- Sección de Proyectos -->
+    <section class="projects-section py-5">
+        <div class="container">
+            
+            
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                
+                <div class="carousel-inner rounded-4 overflow-hidden shadow">
+                    <!-- Proyecto 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-0">
+                            <div class="col-md-6 project-image">
+                                <img src="img/bg-campaña-2.png" class="img-fluid h-100" alt="Proyectos en Puebla" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-6 project-details p-4 p-lg-5">
+                                <h3 class="project-title">Impulsemos la educación en Puebla</h3>
+                                <ul class="project-list">
+                                    <li>
+                                        <strong>Bachillerato Vicente Suárez</strong>
+                                        <p>Adecuación de canchas, pintura de salones, laboratorios, dirección y sala de maestros.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Bachillerato Benito Juárez</strong>
+                                        <p>Colocación de reja interna (60 m²) y barda perimetral (300 m²).</p>
+                                    </li>
+                                    <li>
+                                        <strong>Bachillerato General Oficial Almecatla</strong>
+                                        <p>Pintura y mantenimiento de áreas comunes, habilitación de patio con mesas, sillas y bancas.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-0">
+                            <div class="col-md-6 project-image">
+                                <img src="img/bg-campaña.png" class="img-fluid h-100" alt="Proyectos en Guanajuato" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-6 project-details p-4 p-lg-5">
+                                <h3 class="project-title">Impulsemos juntos la educación en las escuelas de Silao</h3>
+                                <ul class="project-list">
+                                    <li>
+                                        <strong>SABES San Antonio Texas</strong>
+                                        <p>Pintura, contenedores de basura, chapas para puertas y domo central.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Telebachillerato Silao-Napoles</strong>
+                                        <p>Pintura para 9 aulas.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Videobachillerato SABES Chichimequillas</strong>
+                                        <p>Escritorios para maestros, contenedores de basura e impermeabilización.</p>
+                                    </li>
+                                    <li>
+                                        <strong>Telebachillerato Diego Rivera</strong>
+                                        <p>Bancas y rehabilitación de aulas.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Galería -->
+    <section class="gallery-section py-5 bg-light">
+        <div class="container">
+            <h2 class=" text-center mb-5">Galería</h2>
+            
+            <!-- Mobile Carousel -->
+            <div id="galleryCarousel" class="carousel slide d-lg-none" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row card-content">
-                            <div class="col-sm-4 col-xs-12 col-lg-6 col-12 " id="acerca">
-                                <img src="img/bg-campaña-2.png" alt="Imagen" class="img-fluid"
-                                    style="border-radius: 45px; color: #DA5466;">
-                            </div>
-                            <div class="col-sm-8 col-xs-12 col-lg-6 col-12 ">
-                                <div class="text-team text-movil justify rr-pading">
-                                    <h3>Impulsemos la educación en Puebla</h3>
-                                    <p><strong>
-                                        Bachillerato Vicente Suárez
-                                    </strong>
-                                    Adecuación de canchas, pintura de salones, laboratorios, dirección y sala de maestros. </p>
-                                    <p><strong>Bachillerato Benito Juárez </strong>
-                                        Colocación de reja interna (60 m²) y barda perimetral (300 m²).</p>
-                                    <p><strong> Bachillerato General Oficial Almecatla</strong>
-                                        Pintura y mantenimiento de áreas comunes, habilitación de patio con mesas, sillas y bancas.
-                                        </p>
-                                  
-                                </div>
-
-
-                            </div>
-                        </div>
+                        <img src="img/galeria/galeria (6).png" class="d-block w-100 rounded gallery-img" alt="Estudiantes beneficiados 1">
                     </div>
-
-
                     <div class="carousel-item">
-                        <div class="row card-content">
-                            <div class="col-sm-4 col-xs-12 col-lg-6 col-12  " id="acerca">
-                                <img src="img/bg-campaña.png" alt="Imagen" class="img-fluid"
-                                    style="border-radius: 45px; color: #DA5466;">
-                            </div>
-                            <div class="col-sm-8 col-xs-12 col-lg-6 col-12 ">
-
-
-                                <div class="text-team text-movil">
-                                    <div class="container justify">
-                                        <h3>Impulsemos juntos la educación en las escuelas de Silao</h3>
-                                        <p><strong>
-                                            SABES San Antonio Texas
-                                        </strong>
-                                        Pintura, contenedores de basura, chapas para puertas y domo central.
-                                        </p>
-                                        <p><strong>
-                                            Telebachillerato Silao-Napoles
-                                        </strong>
-                                        
-                                        Pintura para 9 aulas 
-                                        </p>
-                                        <p><strong>
-                                            Videobachillerato SABES Chichimequillas
-                                        </strong>
-                                        Escritorios para maestros, contenedores de basura e impermeabilización.
-                                        </p>
-                                        
-                                        <p><strong>
-                                            Telebachillerato Diego Rivera
-                                        </strong>
-                                        Bancas y rehabilitación de aulas.
-                                        </p>
-    
-                                 
-    
-                                    </div>
-                                   
-                                  
-                                 
-                                </div>
-
-
-                            </div>
-                            
-
-                        </div>
+                        <img src="img/galeria/galeria (2).png" class="d-block w-100 rounded gallery-img" alt="Estudiantes beneficiados 2">
                     </div>
-
-                   
-
-
-              
-
-                  
-
-
+                    <div class="carousel-item">
+                        <img src="img/galeria/galeria (3).png" class="d-block w-100 rounded gallery-img" alt="Estudiantes beneficiados 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria/galeria (4).png" class="d-block w-100 rounded gallery-img" alt="Estudiantes beneficiados 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria/galeria (5).png" class="d-block w-100 rounded gallery-img" alt="Estudiantes beneficiados 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria/galeria (1).png" class="d-block w-100 rounded gallery-img" alt="Estudiantes beneficiados 6">
+                    </div>
                 </div>
-
-
-
-
-
-
             </div>
-
-
-
+            
+            <!-- Desktop Gallery -->
+            <div class="row g-3 d-none d-lg-flex">
+                <div class="col-md-4">
+                    <img src="img/galeria/galeria (5).png" class="img-fluid rounded shadow gallery-img" alt="Estudiantes beneficiados 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/galeria/galeria (3).png" class="img-fluid rounded shadow gallery-img" alt="Estudiantes beneficiados 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/galeria/galeria (4).png" class="img-fluid rounded shadow gallery-img" alt="Estudiantes beneficiados 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/galeria/galeria (2).png" class="img-fluid rounded shadow gallery-img" alt="Estudiantes beneficiados 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/galeria/galeria (6).png" class="img-fluid rounded shadow gallery-img" alt="Estudiantes beneficiados 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/galeria/galeria (1).png" class="img-fluid rounded shadow gallery-img" alt="Estudiantes beneficiados 6">
+                </div>
+            </div>
         </div>
-    </div>
-
-<div class="container">
-
-<div class="text-center">
-    <h2 class="mb-3">Galería</h2>
-</div>
-    <!-- Gallery -->
-<div class="row hide ">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-      <img
-        src="img/galeria/galeria (1).png"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-  
-      <img
-        src="img/galeria/galeria (3).png"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Wintry Mountain Landscape"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="img/galeria/galeria (4).png"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Mountains in the Clouds"
-      />
-  
-      <img
-        src="img/galeria/galeria (2).png"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="img/galeria/galeria (6).png"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Waves at Sea"
-      />
-  
-      <img
-        src="img/galeria/galeria (5).png"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Yosemite National Park"
-      />
-    </div>
-  </div>
-
-
-
-  <div id="carouselExampleIndicators" class="carousel slide mb-4 slide-galeria" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block  img-carousel" src="img/galeria/galeria (1).png" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block  img-carousel" src="img/galeria/galeria (2).png" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block  img-carousel" src="img/galeria/movil (1).png" alt="Third slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block img-carousel" src="img/galeria/movil (2).png" alt="Fourth slide">
-      </div>
-     
-      <div class="carousel-item">
-        <img class="d-block  img-carousel" src="img/galeria/galeria (6).png" alt="Sixth slide">
-      </div>
-    </div>
+    </section>
     
-  </div>
-  
-  
 
-
-</div>
-<script>
-    setTimeout(function() {
-        // Selecciona el contenedor de cada botón de Stripe
-        var containers = document.querySelectorAll(".btn-donar .button-container");
-        
-        containers.forEach(function(container) {
-            container.style.width = "300px";  // Cambia el tamaño del contenedor
-        });
-    }, 3000); /* 3000 milisegundos = 3 segundos */
-</script>
-
-
-
-
-  <!-- Gallery -->
-    <footer class="container-fluid">
-        <div class="row text-center">
-            <div class="col-12 logo-footer">
-                <a href="index.html">
-                <img src="img/logo.png" alt="Logo" height="100px"></a>
-            </div>
-            <div class="col-12 social-contact">
-                <div class="social-icons">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
-                        </svg>
+    <!-- Footer -->
+     <!-- Footer completamente rediseñado -->
+     <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img src="img/logosv.png" alt="Volkswagen México" height="50" loading="lazy">
                     </a>
-                    <a href="#Facebook"></a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z" />
-                        </svg>
-                    </a>
-                    <a href="#Twitter"></a>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
-                        </svg>
-                    </a>
-                    <a href="#Instagram"></a>
+                    <p class="small">Comprometidos con la educación y el futuro de las comunidades mexicanas.</p>
                 </div>
-                <div class="contact-info">
-                    <h2>Contacto</h2>
-                    <p>Correo: <br>
-                      <a href="mailto:info@undiaparaelfuturo.com">  info@undiaparaelfuturo.com</p></a>
-                        <a href="https://wa.me/525569306772" class="link"><p>Teléfono: <br>55 6930 6772</p></a>
-                    <p>Dirección: <br>
-                        Calle Montes Urales 455, Piso 2 Oficina 29,<br>Lomas de Chapultepec Sección III, <br> Miguel Hidalgo, 11000, CDMX</p>
+                
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                    <h3 class="h5 fw-bold mb-3">Contacto</h3>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            <a href="mailto:info@undiaparaelfuturo.com" class="text-white text-decoration-none">
+                                <i class="fas fa-envelope me-2"></i> info@undiaparaelfuturo.com
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://wa.me/525569306772" class="text-white text-decoration-none">
+                                <i class="fas fa-phone me-2"></i> 55 6930 6772
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt me-2"></i> Calle Montes Urales 455, Piso 2 Oficina 29, Lomas de Chapultepec Sección III, Miguel Hidalgo, 11000, CDMX
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 text-center">
+                    <h3 class="h5 fw-bold mb-3">Síguenos</h3>
+                    <div class="social-icons mb-3">
+                        <a href="#" class="text-white me-3" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
                     
+                    <div class="footer-links small">
+                        <a href="privacidad.html" class="text-white text-decoration-none me-2">Aviso de Privacidad</a>
+                        <span class="text-muted">|</span>
+                        <a href="informe.html" class="text-white text-decoration-none ms-2">Acerca de</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 footer-links">
-                <a href="privacidad.html">Aviso de Privacidad</a>
-                <span>|</span>
-                <a href="informe.html">Acerca de</a>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row">
+                <div class="col-md-12 text-center small">
+                    <p class="mb-0">&copy; 2025 Volkswagen de México. Todos los derechos reservados.</p>
+                </div>
             </div>
         </div>
     </footer>
 
-
-
-    <script type="module" src="js/campañas.js"></script>
-    <script src="js/logout.js"></script>
-    <script></script>
+     <!-- Scripts -->
+      <!-- jQuery primero, luego Popper.js, luego Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Tu script de navegación -->
+    <script src="js/auth-nav.js"></script>
+    
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="js/logout.js"></script>
+     <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+     
+     <script>
+         // Mostrar/ocultar campo de cantidad personalizada
+         document.getElementById('show-custom-amount').addEventListener('click', function() {
+             const form = document.getElementById('custom-amount-form');
+             if (form.style.display === 'none') {
+                 form.style.display = 'block';
+                 this.textContent = 'Cancelar';
+             } else {
+                 form.style.display = 'none';
+                 this.textContent = 'Otra cantidad';
+             }
+         });
+         
+         // Asegurar que los botones de Stripe tengan el ancho correcto
+         document.addEventListener('DOMContentLoaded', function() {
+             setTimeout(function() {
+                 const stripeButtons = document.querySelectorAll('.stripe-button-container');
+                 stripeButtons.forEach(function(button) {
+                     button.style.width = '100%';
+                     button.style.overflow = 'hidden';
+                 });
+             }, 1000);
+         });
+     </script>
 </body>
-
-
-
-
 </html>

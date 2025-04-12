@@ -1,1 +1,80 @@
-(function(_0x47d01a,_0x545549){const _0x2dd588=_0x1b68,_0x21eba2=_0x47d01a();while(!![]){try{const _0x503da0=-parseInt(_0x2dd588(0x92))/0x1*(-parseInt(_0x2dd588(0x77))/0x2)+parseInt(_0x2dd588(0x76))/0x3+parseInt(_0x2dd588(0x73))/0x4+-parseInt(_0x2dd588(0x93))/0x5+parseInt(_0x2dd588(0x7d))/0x6+parseInt(_0x2dd588(0x8b))/0x7*(parseInt(_0x2dd588(0x8d))/0x8)+-parseInt(_0x2dd588(0x90))/0x9*(parseInt(_0x2dd588(0x94))/0xa);if(_0x503da0===_0x545549)break;else _0x21eba2['push'](_0x21eba2['shift']());}catch(_0x40c47c){_0x21eba2['push'](_0x21eba2['shift']());}}}(_0x5b99,0x7e6a9),$(document)['ready'](()=>{const _0x4ac1ee=_0x1b68,_0xbbf4ae=_0x4ac1ee(0x8a),_0x28b636='ysql-ywx2.onrender.com/api/token',_0x11ceac=document[_0x4ac1ee(0x80)](_0x4ac1ee(0x79)),_0x52c378=document['getElementById']('contrasenia'),_0x1a0734=document['getElementById'](_0x4ac1ee(0x82));_0x1a0734['addEventListener'](_0x4ac1ee(0x86),_0x515bbb=>{const _0x255575=_0x4ac1ee;_0x515bbb[_0x255575(0x7c)](),_0x1a0734['disabled']=!![],$('#bnt_click')[_0x255575(0x6e)]('<div\x20class=\x27spinner-border\x20text-dark\x27\x20role=\x27status\x27>'+_0x255575(0x7a)+'</div>');var _0x61834e={'email':_0x11ceac[_0x255575(0x6b)],'password':_0x52c378[_0x255575(0x6b)]};const _0x1768ac={'method':_0x255575(0x84),'body':JSON[_0x255575(0x87)](_0x61834e),'headers':{'Content-Type':_0x255575(0x88)}};fetch(_0xbbf4ae+_0x28b636+_0x255575(0x81),_0x1768ac)[_0x255575(0x91)](_0x21c38d=>_0x21c38d[_0x255575(0x75)]())[_0x255575(0x91)](_0x11c247=>{const _0x96ac97=_0x255575;console['log'](_0x11c247),_0x11c247[_0x96ac97(0x8e)]=='User\x20not\x20found'||_0x11c247[_0x96ac97(0x8e)]==_0x96ac97(0x70)?(Swal[_0x96ac97(0x72)]({'position':_0x96ac97(0x7f),'icon':_0x96ac97(0x6a),'title':_0x96ac97(0x8c),'showConfirmButton':![],'timer':0xbb8}),$('#bnt_click')[_0x96ac97(0x8f)](''),$(_0x96ac97(0x89))['html'](_0x96ac97(0x7b)),_0x1a0734[_0x96ac97(0x85)]=![]):(sessionStorage[_0x96ac97(0x6d)]('token',_0x11c247[_0x96ac97(0x7e)]),Swal['fire']({'position':_0x96ac97(0x7f),'icon':_0x96ac97(0x78),'title':_0x96ac97(0x74),'showConfirmButton':![],'timer':0x5dc}),setTimeout(()=>{const _0x38dbff=_0x96ac97;window[_0x38dbff(0x83)][_0x38dbff(0x6f)]=_0x38dbff(0x6c);},0x7d0));})['catch'](_0x5ce56a=>{const _0x24cc54=_0x255575;Swal[_0x24cc54(0x72)]({'position':_0x24cc54(0x7f),'icon':_0x24cc54(0x6a),'title':_0x24cc54(0x71),'showConfirmButton':![],'timer':0x3a98});});});}));function _0x1b68(_0x1b9dfb,_0x1f5695){const _0x5b9968=_0x5b99();return _0x1b68=function(_0x1b68e4,_0x9c2cb6){_0x1b68e4=_0x1b68e4-0x6a;let _0x59451f=_0x5b9968[_0x1b68e4];return _0x59451f;},_0x1b68(_0x1b9dfb,_0x1f5695);}function _0x5b99(){const _0x1ba3f8=['3724270gqgTJv','error','value','campañas.html','setItem','append','href','Incorrect\x20password','Hubo\x20un\x20error\x20\x20al\x20intentar\x20ingresar,\x20reportar\x20al\x20correo\x20info@undiaparaelfuturo.com','fire','1955248sSckLK','Sea\x20Bienvenid@','json','2258094VfZqJb','26ZaWQtY','success','correo','<span\x20class=\x27sr-only\x27>Loading...</span>','Login','preventDefault','5097132gVdzpS','token','top-center','getElementById','/loginUsuariovw','login','location','POST','disabled','submit','stringify','application/json','#bnt_click','https://apirest-m','399zRytAk','Error\x20en\x20las\x20credenciales','78632uMITOp','message','html','45DTnEUo','then','40031SYnkXz','3958760dvaZgY'];_0x5b99=function(){return _0x1ba3f8;};return _0x5b99();}
+$(document).ready(() => {
+    //const part2 = "http://localhost";
+    //const part1 = ":3001/api/token";
+    const part2 = "https://apirest-m";
+    const part1 = "ysql-ywx2.onrender.com/api/token";
+      const email = document.getElementById("correo");
+      const pass = document.getElementById("contrasenia");
+      const button = document.getElementById("login");
+    
+      //const rest_password = document.getElementById("rest_password");
+    
+    
+     /* rest_password.addEventListener("click", () => {
+          sessionStorage.setItem("token","jloujsdlsjdksscsdlsldkmlsdkchbjsdjcbsdcbhs");
+          window.location.href = "restrablecer.html";
+      })*/
+      
+      button.addEventListener("submit",(e) => {
+          e.preventDefault();
+          //console.log(email.value,pass.value);
+      button.disabled = true;
+        
+              $("#bnt_click").append("<div class='spinner-border text-dark' role='status'>"+
+                  "<span class='sr-only'>Loading...</span>"+
+                "</div>");
+          
+      
+          var data = {
+          email: email.value,
+          password: pass.value
+          }
+      
+          const options = {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers:{
+                  'Content-Type':'application/json'
+              }
+          }
+      
+          fetch(part2+part1+"/loginUsuariovw",options)
+          .then(resp => resp.json())
+          .then(resp => {
+              console.log(resp);
+              if (resp.message == "User not found" ||  resp.message == "Incorrect password") {
+                  Swal.fire({
+                      position: "top-center",
+                      icon: "error",
+                      title: "Error en las credenciales",
+                      showConfirmButton: false,
+                      timer: 3000,
+                    });   
+                    $("#bnt_click").html("");
+                    $("#bnt_click").html("Login");
+                    button.disabled = false;
+              }else{
+                  sessionStorage.setItem("token",resp.token);
+                  Swal.fire({
+                      position: "top-center",
+                      icon: "success",
+                      title: "Sea Bienvenid@",
+                      showConfirmButton: false,
+                      timer: 1500,
+                    });
+                    setTimeout(() => {
+      window.location.href = "campañas.html";
+                    },2000)
+              }
+          })
+          .catch(error => {
+              Swal.fire({
+                  position: "top-center",
+                  icon: "error",
+                  title: "Hubo un error  al intentar ingresar, reportar al correo info@undiaparaelfuturo.com",
+                  showConfirmButton: false,
+                  timer: 15000,
+                });
+          })
+      })
+      })

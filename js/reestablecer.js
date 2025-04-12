@@ -1,1 +1,189 @@
-function _0x22d8(_0x2137a8,_0x49a5f3){const _0x2d7fc1=_0x2d7f();return _0x22d8=function(_0x22d8db,_0xc22e5a){_0x22d8db=_0x22d8db-0x101;let _0x4ac557=_0x2d7fc1[_0x22d8db];return _0x4ac557;},_0x22d8(_0x2137a8,_0x49a5f3);}function _0x2d7f(){const _0x93b61e=['Contraseña\x20actualizada\x20correctamente','random','\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<p\x20style=\x22font-size:\x2016px;\x20color:\x20#555;\x20margin:\x2020px\x200;\x22>\x0a\x20\x20\x20\x20\x20\x20Si\x20deseas\x20cambiarla,\x20haz\x20clic\x20en\x20el\x20siguiente\x20enlace:\x0a\x20\x20\x20\x20</p>\x0a\x0a\x20\x20\x20\x20https://undiaparaelfuturo.com/cambiar-password.html\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20<p\x20style=\x22font-size:\x2012px;\x20color:\x20#bbb;\x20margin-top:\x2020px;\x22>\x0a\x20\x20\x20\x20\x20\x20©\x202024\x20Volkswagen\x20México\x20-\x20Un\x20Día\x20para\x20el\x20Futuro.\x20Todos\x20los\x20derechos\x20reservados.\x0a\x20\u00a0\u00a0\u00a0</p>\x0a\u00a0\u00a0</div>\x0a\x20\x20\x20\x20\x20\x20','/api/correo/sendEmailvw','fire','getElementById','message','i/vweb/recuperarcontrasenia','509332aIauUx','#correo','POST','Hubo\x20un\x20error\x20al\x20intentar\x20ingresar,\x20reportar\x20al\x20correo\x20kevin.martinez@hgroup.consulting','459990yhRIHl','\x20volver\x20a\x20intentar,\x20si\x20el\x20problema\x20persiste\x20reportar\x20al\x20correo\x20info@undiaparaelfuturo.com','stringify','val','User\x20not\x20found','Hola\x20te\x20saludamos\x20de\x20Volkswagen','419680AEPLxJ','innerHTML','https://apirest-mysql-ywx2.onrender.com','665448ncnMCJ','7698621wAkVDn','\x0a\x0a<div\x20style=\x22background-color:\x20#f9f9f9;\x20padding:\x2020px;\x20font-family:\x20Arial,\x20sans-serif;\x20color:\x20#333;\x20line-height:\x201.5;\x20text-align:\x20center;\x20width:\x20100%;\x20max-width:\x20600px;\x20margin:\x200\x20auto;\x20border:\x201px\x20solid\x20#ddd;\x20border-radius:\x208px;\x22>\x0a\x20\x20\x20\x20<div\x20style=\x22text-align:\x20left;\x22>\x0a\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://undiaparaelfuturo.com/img/logo.png\x22\x20alt=\x22Volkswagen\x20México\x20-\x20Un\x20Día\x20para\x20el\x20Futuro\x22\x20style=\x22height:\x2050px;\x20margin-bottom:\x2020px;\x22>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<h2\x20style=\x22font-size:\x2022px;\x20color:\x20#444;\x22>Tu\x20nueva\x20contraseña</h2>\x0a\x20\x20\x20\x20<p\x20style=\x22font-size:\x2016px;\x20color:\x20#555;\x20margin:\x2020px\x200;\x22>\x0a\x20\x20\x20\x20\x20\x20Hola,\x20este\x20mensaje\x20es\x20de\x20la\x20plataforma\x20de\x20<strong>Volkswagen\x20México\x20-\x20Un\x20Día\x20para\x20el\x20Futuro</strong>.\x0a\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20<p\x20style=\x22font-size:\x2016px;\x20color:\x20#555;\x20margin:\x2020px\x200;\x22>\x0a\x20\x20\x20\x20\x20\x20Hemos\x20generado\x20automáticamente\x20una\x20nueva\x20contraseña\x20para\x20ti:\x0a\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20<div\x20style=\x22font-size:\x2024px;\x20font-weight:\x20bold;\x20color:\x20#222;\x20margin:\x2010px\x200;\x20padding:\x2010px\x200;\x20border-top:\x201px\x20solid\x20#ddd;\x20border-bottom:\x201px\x20solid\x20#ddd;\x22>\x0a\x20\x20\x20\x20','success','catch','application/json','then','10jDCNKu','2133141OdXLdY','error','json','Esta\x20cuenta\x20de\x20correo\x20no\x20existe','Enviar','floor','Error\x20al\x20enviar\x20la\x20nueva\x20contraseña,\x20volver\x20a\x20intentar','top-center','ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789','252616DHRDLd','length','log','info@undiaparaelfuturo.com','PUT','preventDefault','Validando\x20actualización...'];_0x2d7f=function(){return _0x93b61e;};return _0x2d7f();}(function(_0x1038eb,_0x34fb86){const _0x321462=_0x22d8,_0x391bf7=_0x1038eb();while(!![]){try{const _0x5c7fe6=parseInt(_0x321462(0x11d))/0x1+parseInt(_0x321462(0x10e))/0x2+-parseInt(_0x321462(0x105))/0x3+-parseInt(_0x321462(0x127))/0x4*(parseInt(_0x321462(0x104))/0x5)+-parseInt(_0x321462(0x121))/0x6+parseInt(_0x321462(0x12b))/0x7+-parseInt(_0x321462(0x12a))/0x8;if(_0x5c7fe6===_0x34fb86)break;else _0x391bf7['push'](_0x391bf7['shift']());}catch(_0x382db1){_0x391bf7['push'](_0x391bf7['shift']());}}}(_0x2d7f,0x9fd76),$(document)['ready'](()=>{const _0x31c500=_0x22d8;var _0x50dd97=document[_0x31c500(0x11a)]('bnt_click');const _0x34e4b7=_0x31c500(0x129),_0x459967=_0x34e4b7+'/a'+'p'+_0x31c500(0x11c);function _0x3f594a(_0xd629ce){const _0x5c83ac=_0x31c500,_0xdc19a6=_0x5c83ac(0x10d);let _0x1e27df='';for(let _0x29d16e=0x0;_0x29d16e<_0xd629ce;_0x29d16e++){const _0x59ed28=Math[_0x5c83ac(0x10a)](Math[_0x5c83ac(0x116)]()*_0xdc19a6[_0x5c83ac(0x10f)]);_0x1e27df+=_0xdc19a6[_0x59ed28];}return _0x1e27df;}const _0x41c0aa=_0x3f594a(0x8),_0x4ad140=_0x31c500(0x12c)+_0x41c0aa+_0x31c500(0x117);$('#login')['on']('submit',_0x582757=>{const _0x4555cf=_0x31c500;_0x582757[_0x4555cf(0x113)]();if($(_0x4555cf(0x11e))[_0x4555cf(0x124)]()=='')return alert('Requerimos\x20el\x20correo,\x20como\x20primera\x20validación');_0x50dd97[_0x4555cf(0x128)]=_0x4555cf(0x114),_0x50dd97['disabled']='true';var _0x3efeb0={'email':$(_0x4555cf(0x11e))[_0x4555cf(0x124)](),'contrasena':_0x41c0aa},_0x5a9632={'method':_0x4555cf(0x112),'body':JSON[_0x4555cf(0x123)](_0x3efeb0),'headers':{'Content-Type':_0x4555cf(0x102)}};fetch(_0x459967,_0x5a9632)[_0x4555cf(0x103)](_0x3fe173=>_0x3fe173['json']())[_0x4555cf(0x103)](_0x5c7f87=>{const _0x242c5d=_0x4555cf;console['log'](_0x5c7f87);_0x19fdc3:_0x5c7f87['message']==_0x242c5d(0x125)?(Swal[_0x242c5d(0x119)]({'position':_0x242c5d(0x10c),'icon':_0x242c5d(0x106),'title':_0x242c5d(0x108),'showConfirmButton':![],'timer':0x2710}),_0x50dd97[_0x242c5d(0x128)]=_0x242c5d(0x109),_0x50dd97['disabled']=![]):_0x5c7f87[_0x242c5d(0x11b)]==_0x242c5d(0x115)&&(_0x53e604($('#correo')['val']()),setTimeout(()=>{},0xfa0));})[_0x4555cf(0x101)](_0x4df35e=>{const _0x556a42=_0x4555cf;Swal['fire']({'position':_0x556a42(0x10c),'icon':'error','title':_0x556a42(0x120),'showConfirmButton':![],'timer':0x3a98});});});function _0x53e604(_0x2dec74){const _0x1c0a12=_0x31c500;var _0x3d2878={'text':_0x1c0a12(0x126),'toEmail':_0x2dec74,'fromEmail':_0x1c0a12(0x111),'html':_0x4ad140},_0x3c71c8={'method':_0x1c0a12(0x11f),'body':JSON['stringify'](_0x3d2878),'headers':{'Content-Type':_0x1c0a12(0x102)}};fetch(_0x34e4b7+_0x1c0a12(0x118),_0x3c71c8)[_0x1c0a12(0x103)](_0x71f5e1=>_0x71f5e1[_0x1c0a12(0x107)]())[_0x1c0a12(0x103)](_0x429a73=>{const _0x434017=_0x1c0a12;console[_0x434017(0x110)](_0x429a73),_0x429a73!='CORRECTO'?Swal[_0x434017(0x119)]({'position':_0x434017(0x10c),'icon':_0x434017(0x106),'title':_0x434017(0x10b),'showConfirmButton':![],'timer':0x2710}):Swal[_0x434017(0x119)]({'position':_0x434017(0x10c),'icon':_0x434017(0x12d),'title':'Una\x20nueva\x20contraseña,\x20se\x20le\x20ha\x20mandado\x20a\x20su\x20correo','showConfirmButton':![],'timer':0x2710});})[_0x1c0a12(0x101)](_0x426088=>{const _0x470249=_0x1c0a12;Swal[_0x470249(0x119)]({'position':_0x470249(0x10c),'icon':_0x470249(0x106),'title':'Error\x20al\x20enviar\x20la\x20nueva\x20contraseña,\x20'+_0x426088+_0x470249(0x122),'showConfirmButton':![],'timer':0x2710});});}}));
+$(document).ready(() => {
+  const btn = $("#bnt_click");
+  //const link = "http://localhost:3001";
+  const link = "https://apirest-mysql-ywx2.onrender.com";
+  const recuperarcontrasenia = link + "/api/vweb/recuperarcontrasenia";
+
+  // Generar contraseña aleatoria segura
+  function generateRandomPassword(length) {
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+      const specialChars = '!@#$%^&*';
+      let password = '';
+      
+      // Asegurar al menos un carácter especial
+      password += specialChars[Math.floor(Math.random() * specialChars.length)];
+      
+      // Resto de la contraseña
+      for (let i = 1; i < length; i++) {
+          const randomIndex = Math.floor(Math.random() * characters.length);
+          password += characters[randomIndex];
+      }
+      
+      // Mezclar la contraseña para mayor seguridad
+      return password.split('').sort(() => 0.5 - Math.random()).join('');
+  }
+
+  const password = generateRandomPassword(12); // Contraseña más larga y segura
+
+  const Body = `
+<div style="background-color: #f9f9f9; padding: 20px; font-family: Arial, sans-serif; color: #333; line-height: 1.5; text-align: center; width: 100%; max-width: 600px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px;">
+  <div style="text-align: left;">
+    <img src="https://undiaparaelfuturo.com/img/logo.png" alt="Volkswagen México - Un Día para el Futuro" style="height: 50px; margin-bottom: 20px;">
+  </div>
+  <h2 style="font-size: 22px; color: #444;">Tu nueva contraseña temporal</h2>
+  <p style="font-size: 16px; color: #555; margin: 20px 0;">
+    Hola, este mensaje es de la plataforma de <strong>Volkswagen México - Un Día para el Futuro</strong>.
+  </p>
+  <p style="font-size: 16px; color: #555; margin: 20px 0;">
+    Hemos generado automáticamente una nueva contraseña temporal para ti:
+  </p>
+  <div style="font-size: 24px; font-weight: bold; color: #222; margin: 10px 0; padding: 10px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; background-color: #f0f0f0; border-radius: 4px;">
+    ${password}
+  </div>
+  <p style="font-size: 16px; color: #555; margin: 20px 0;">
+    Por seguridad, te recomendamos cambiar esta contraseña después de iniciar sesión.
+  </p>
+  <a href="https://undiaparaelfuturo.com/cambiar-password.html" style="display: inline-block; background-color: #0056b3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; margin: 10px 0; font-weight: bold;">
+    Cambiar contraseña
+  </a>
+  <p style="font-size: 14px; color: #777; margin-top: 30px;">
+    Si no solicitaste este cambio, por favor contacta a soporte técnico inmediatamente.
+  </p>
+  <p style="font-size: 12px; color: #bbb; margin-top: 20px;">
+    © ${new Date().getFullYear()} Volkswagen México - Un Día para el Futuro. Todos los derechos reservados.
+  </p>
+</div>`;
+
+  $("#login").on("submit", (event) => {
+      event.preventDefault();
+      
+      // Validación básica del correo
+      const email = $("#correo").val().trim();
+      if (!email) {
+          Swal.fire({
+              icon: 'error',
+              title: 'Campo requerido',
+              text: 'Por favor ingresa tu correo electrónico',
+              confirmButtonColor: '#0056b3'
+          });
+          return;
+      }
+
+      // Validación de formato de correo
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          Swal.fire({
+              icon: 'error',
+              title: 'Correo inválido',
+              text: 'Por favor ingresa un correo electrónico válido',
+              confirmButtonColor: '#0056b3'
+          });
+          return;
+      }
+
+      // Mostrar spinner en el botón
+      const originalText = btn.html();
+      btn.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Procesando...');
+      btn.prop('disabled', true);
+
+      // Preparar datos para la API
+      const data = {
+          email: email,
+          contrasena: password
+      };
+
+      const options = {
+          method: "PUT",
+          body: JSON.stringify(data),
+          headers: {
+              "Content-Type": "application/json"
+          }
+      };
+
+      // Primera llamada: Actualizar contraseña en la base de datos
+      fetch(recuperarcontrasenia, options)
+          .then(resp => {
+              if (!resp.ok) throw new Error(resp.statusText);
+              return resp.json();
+          })
+          .then(resp => {
+              if (resp.message === 'User not found') {
+                  throw new Error('Esta cuenta de correo no existe');
+              }
+              
+              if (resp.message === 'Contraseña actualizada correctamente') {
+                  // Segunda llamada: Enviar correo con la nueva contraseña
+                  return Recuperar(email);
+              }
+              
+              throw new Error('Respuesta inesperada del servidor');
+          })
+          .then(() => {
+              // Mostrar mensaje de éxito
+              Swal.fire({
+                  title: 'Contraseña actualizada',
+                  html: 'Hemos enviado una nueva contraseña temporal a tu correo electrónico. <br><br>Serás redirigido al login en 10 segundos...',
+                  icon: 'success',
+                  timer: 10000,
+                  timerProgressBar: true,
+                  showConfirmButton: false,
+                  willClose: () => {
+                      window.location.href = "login.html";
+                  }
+              });
+
+              // Redirección automática después de 5 segundos
+              setTimeout(() => {
+                  window.location.href = "login.html";
+              }, 12000);
+          })
+          .catch(error => {
+              Swal.fire({
+                  icon: 'error',
+                  title: 'Error',
+                  html: `Hubo un problema al procesar tu solicitud: <strong>${error.message}</strong><br><br>Si el problema persiste, por favor contacta a soporte técnico.`,
+                  confirmButtonColor: '#0056b3',
+                  confirmButtonText: 'Entendido'
+              });
+          })
+          .finally(() => {
+              // Restaurar botón
+              btn.html(originalText);
+              btn.prop('disabled', false);
+          });
+  });
+
+  function Recuperar(email) {
+      return new Promise((resolve, reject) => {
+          const data = {
+              text: 'Hola, te saludamos de Un día para el futuro - Volkswagen',
+              toEmail: email,
+              fromEmail: "info@undiaparaelfuturo.com",
+              html: Body
+          };
+
+          const options = {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: {
+                  "Content-Type": "application/json"
+              }
+          };
+
+          fetch(link + "/api/correo/sendEmailvw", options)
+              .then(resp => {
+                  if (!resp.ok) throw new Error(resp.statusText);
+                  return resp.json();
+              })
+              .then(resp => {
+                  if (resp === 'CORRECTO') {
+                      resolve();
+                  } else {
+                      throw new Error('Error al enviar el correo');
+                  }
+              })
+              .catch(error => {
+                  reject(new Error('Error al enviar la nueva contraseña: ' + error.message));
+              });
+      });
+  }
+});

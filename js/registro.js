@@ -1,1 +1,305 @@
-function _0x401e(){const _0x507d54=['test','Application/json','POST','success','value','nombre','push','Las\x20contraseñas\x20no\x20coinciden','json','314494dJxCxE','error','lo\x20sentimos,\x20este\x20correo\x20ya\x20fue\x20registrado','application/json','apellido_paterno','sucursal','430495qGHeKT','47454NZepkr','preventDefault','remove','crear-cuenta','click','fire','previousElementSibling','center','location','selectedIndex','50368TTDWLY','getElementById','Guardando\x20registro...','Error\x20al\x20enviar\x20la\x20petición,\x20volver\x20a\x20intentar,\x20si\x20persiste\x20el\x20problema\x20reportar\x20al\x20correo:\x20info@undiaparaelfuturo.com','boton_clave','Incorrect\x20clave','href','1217601EShGEp','3HBhaRo','status','correo','then','text','apellido_materno','password','1430mclkor','display','length','i/token/loginClave','fa-eye','add','top-center','addEventListener','24OZFxLa','ciudad','170kltWTf','login.html','catch','change','18gPJrlX','block','innerHTML','forEach','type','apeido_materno','ready','btn_form','17310NWnIeZ','288xemFNp','replace','467418adjUHK','DES','contrasenia','fa-eye-slash','i/vweb/saveusuario','style','apeido_paterno','LA\x20CLAVE\x20NO\x20ES\x20CORRECTA','stringify','disabled','submit','https://apirest-mysql-ywx2.onrender.com','#form\x20.form-control','message','password-input','i/vweb/getEmail','form','#form\x20.name','.toggle-visibility','Registro\x20realizado\x20con\x20éxito','log','validar-contrasenia','classList','querySelectorAll'];_0x401e=function(){return _0x507d54;};return _0x401e();}const _0x36716b=_0x5545;function _0x5545(_0x5b373c,_0x4138ea){const _0x401e46=_0x401e();return _0x5545=function(_0x55455a,_0x4b1a2b){_0x55455a=_0x55455a-0xec;let _0x2f31c4=_0x401e46[_0x55455a];return _0x2f31c4;},_0x5545(_0x5b373c,_0x4138ea);}(function(_0x182f73,_0x4f53f0){const _0x26b83a=_0x5545,_0x1627a2=_0x182f73();while(!![]){try{const _0x3f29b5=parseInt(_0x26b83a(0x109))/0x1+-parseInt(_0x26b83a(0x102))/0x2*(-parseInt(_0x26b83a(0x11b))/0x3)+-parseInt(_0x26b83a(0x113))/0x4*(-parseInt(_0x26b83a(0x12c))/0x5)+-parseInt(_0x26b83a(0x130))/0x6*(-parseInt(_0x26b83a(0x13b))/0x7)+parseInt(_0x26b83a(0x12a))/0x8*(parseInt(_0x26b83a(0x11a))/0x9)+-parseInt(_0x26b83a(0x138))/0xa*(parseInt(_0x26b83a(0x122))/0xb)+parseInt(_0x26b83a(0x139))/0xc*(-parseInt(_0x26b83a(0x108))/0xd);if(_0x3f29b5===_0x4f53f0)break;else _0x1627a2['push'](_0x1627a2['shift']());}catch(_0x2fdffe){_0x1627a2['push'](_0x1627a2['shift']());}}}(_0x401e,0x3585c),$(document)[_0x36716b(0x136)](()=>{const _0x214167=_0x36716b,_0x109c6c=document[_0x214167(0x114)](_0x214167(0xef)),_0x2fb898=_0x214167(0xec),_0x57cb9a=_0x2fb898+'/a'+'p'+_0x214167(0x125),_0x2cd45e=_0x2fb898+'/a'+'p'+_0x214167(0x13f),_0x1a0318=document['getElementById'](_0x214167(0x117)),_0x1cdb08=document['getElementById'](_0x214167(0x137)),_0x5abd1=document['getElementById'](_0x214167(0xf1)),_0x4769c9=document[_0x214167(0x114)]('contrasenia'),_0xaf00b9=document[_0x214167(0x114)](_0x214167(0xf6)),_0x2f854d=document[_0x214167(0x114)](_0x214167(0x11d)),_0x3f04eb=_0x2fb898+'/a'+'p'+_0x214167(0xf0);_0x2f854d[_0x214167(0x129)](_0x214167(0x12f),()=>{const _0x481dd0=_0x214167;var _0x57aefb={'correo':_0x2f854d['value']};const _0x3afec1={'method':'POST','body':JSON[_0x481dd0(0x143)](_0x57aefb),'headers':{'Content-Type':_0x481dd0(0x105)}};fetch(_0x3f04eb,_0x3afec1)[_0x481dd0(0x11e)](_0x5b43ee=>_0x5b43ee[_0x481dd0(0x101)]())[_0x481dd0(0x11e)](_0xd05271=>{const _0x40d0e8=_0x481dd0;console[_0x40d0e8(0xf5)](_0xd05271[_0x40d0e8(0x124)]),_0xd05271['length']>0x0&&(Swal['fire']({'position':_0x40d0e8(0x128),'icon':_0x40d0e8(0x103),'title':_0x40d0e8(0x104),'showConfirmButton':!![],'timer':0x2710}),_0x2f854d['value']='');});}),_0xaf00b9[_0x214167(0x129)](_0x214167(0x12f),()=>{const _0x2d14b8=_0x214167;if(_0xaf00b9['value']!=_0x4769c9['value'])return _0xaf00b9[_0x2d14b8(0xfd)]='',alert(_0x2d14b8(0x100));}),_0x4769c9[_0x214167(0x129)](_0x214167(0x12f),()=>{const _0x497425=_0x214167;var _0xfd601a=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;!_0xfd601a[_0x497425(0xf9)](_0x4769c9[_0x497425(0xfd)])&&(alert('La\x20contraseña\x20debe\x20tener\x20mas\x20de\x208\x20caracteres,\x20incluyendo\x20números\x20y\x20letras.'),_0x4769c9['value']='');}),_0x4e1549();function _0x4e1549(){const _0x26a597=_0x214167,_0x268d20=document[_0x26a597(0xf8)](_0x26a597(0xf3));_0x268d20[_0x26a597(0x133)](_0xba4f28=>{_0xba4f28['addEventListener']('click',()=>{const _0x2b07ae=_0x5545,_0x5e0eb6=_0xba4f28[_0x2b07ae(0x10f)];_0x5e0eb6[_0x2b07ae(0x134)]===_0x2b07ae(0x121)?(_0x5e0eb6[_0x2b07ae(0x134)]=_0x2b07ae(0x11f),_0xba4f28[_0x2b07ae(0xf7)][_0x2b07ae(0x10b)](_0x2b07ae(0x126)),_0xba4f28[_0x2b07ae(0xf7)][_0x2b07ae(0x127)](_0x2b07ae(0x13e))):(_0x5e0eb6[_0x2b07ae(0x134)]=_0x2b07ae(0x121),_0xba4f28[_0x2b07ae(0xf7)]['remove']('fa-eye-slash'),_0xba4f28['classList'][_0x2b07ae(0x127)](_0x2b07ae(0x126)));});});}_0x5abd1[_0x214167(0x129)](_0x214167(0x145),_0x41929c=>{const _0xf82c79=_0x214167;_0x41929c[_0xf82c79(0x10a)](),_0x1cdb08[_0xf82c79(0x144)]=!![],_0x1cdb08[_0xf82c79(0x132)]=_0xf82c79(0x115);var _0x393c0e={};$(_0xf82c79(0xed))['each'](function(){const _0x4d0514=_0xf82c79;var _0x26a66a=this['id'][_0x4d0514(0x13a)](/\[\]/g,'');console[_0x4d0514(0xf5)](_0x26a66a,this['id']);if(!_0x393c0e[_0x26a66a])_0x393c0e[_0x26a66a]=[];_0x393c0e[_0x26a66a]['push'](this[_0x4d0514(0xfd)]);}),$(_0xf82c79(0xf2))['each'](function(){const _0x103f08=_0xf82c79;var _0x2a1834=this['id']['replace'](/\[\]/g,'');if(!_0x393c0e[_0x2a1834+_0x103f08(0x13c)])_0x393c0e[_0x2a1834+_0x103f08(0x13c)]=[];var _0x52259d=this,_0xe55e56=_0x52259d['options'][_0x52259d[_0x103f08(0x112)]][_0x103f08(0x11f)];_0x393c0e[_0x2a1834+_0x103f08(0x13c)][_0x103f08(0xff)](_0xe55e56);}),_0xa0a08e(_0x393c0e);});async function _0xa0a08e(_0xb4c3fe){const _0x1586b5=_0x214167;let _0x16100f=_0x2f3008(_0xb4c3fe),_0xb895b6=0x0,_0x939430=[];_0x939430[_0xb895b6]=await _0x343be2(_0x16100f),_0x939430[_0xb895b6][_0x1586b5(0x11c)]=='CORRECTO'?(Swal[_0x1586b5(0x10e)]({'position':_0x1586b5(0x110),'icon':'success','title':_0x1586b5(0xf4),'showConfirmButton':!![],'timer':0x1194}),setTimeout(()=>{const _0x1b37e6=_0x1586b5;window[_0x1b37e6(0x111)][_0x1b37e6(0x119)]=_0x1b37e6(0x12d);},0x1388)):Swal['fire']({'position':_0x1586b5(0x110),'icon':_0x1586b5(0x103),'title':'Algo\x20fallo,\x20vuelve\x20a\x20intentarlo,\x20si\x20el\x20problema\x20persiste,\x20reporta\x20al\x20correo:\x20info@undiaparaelfuturo.com','showConfirmButton':!![],'timer':0x1194});}function _0x343be2(_0x1bd050){const _0x4354bc=_0x214167;console[_0x4354bc(0xf5)](_0x1bd050);const _0x3f269d={'nombre':_0x1bd050[_0x4354bc(0xfe)],'apeido_paterno':_0x1bd050[_0x4354bc(0x141)],'apeido_materno':_0x1bd050[_0x4354bc(0x135)],'correo':_0x1bd050[_0x4354bc(0x11d)],'password':_0x1bd050[_0x4354bc(0x121)],'ciudad':_0x1bd050[_0x4354bc(0x12b)],'sucursal':_0x1bd050[_0x4354bc(0x107)],'usuario':_0x1bd050[_0x4354bc(0x11d)]},_0x16a0cb={'method':_0x4354bc(0xfb),'body':JSON[_0x4354bc(0x143)](_0x3f269d),'headers':{'Content-Type':_0x4354bc(0xfa)}};return fetch(_0x2cd45e,_0x16a0cb)[_0x4354bc(0x11e)](_0x47ed0b=>_0x47ed0b['json']())[_0x4354bc(0x11e)](_0xfb81e7=>{return console['log'](_0xfb81e7),_0xfb81e7;})[_0x4354bc(0x12e)](_0x4c2465=>{return _0x4c2465;});}function _0x2f3008(_0x4feea9){const _0x6aa3f3=_0x214167;var _0x3adf7d={'nombre':_0x4feea9['nombre'][0x0],'apeido_paterno':_0x4feea9[_0x6aa3f3(0x106)][0x0],'apeido_materno':_0x4feea9[_0x6aa3f3(0x120)][0x0],'correo':_0x4feea9[_0x6aa3f3(0x11d)][0x0],'password':_0x4feea9[_0x6aa3f3(0x13d)][0x0],'ciudad':_0x4feea9[_0x6aa3f3(0x12b)][0x0],'sucursal':_0x4feea9['sucursal'][0x0],'usuario':_0x4feea9[_0x6aa3f3(0x11d)][0x0]};return _0x3adf7d;}_0x1a0318[_0x214167(0x129)](_0x214167(0x10d),()=>{const _0x3e6b46=_0x214167,_0x518ecf={'clave':_0x109c6c['value']},_0x1f7465={'method':_0x3e6b46(0xfb),'body':JSON[_0x3e6b46(0x143)](_0x518ecf),'headers':{'Content-Type':_0x3e6b46(0xfa)}};fetch(_0x57cb9a,_0x1f7465)[_0x3e6b46(0x11e)](_0x4acb39=>_0x4acb39[_0x3e6b46(0x101)]())[_0x3e6b46(0x11e)](_0x3c36bf=>{const _0x434bb5=_0x3e6b46;console[_0x434bb5(0xf5)](_0x3c36bf[_0x434bb5(0xee)]),_0x3c36bf[_0x434bb5(0xee)]==_0x434bb5(0x118)?Swal[_0x434bb5(0x10e)]({'position':_0x434bb5(0x110),'icon':_0x434bb5(0x103),'title':_0x434bb5(0x142),'showConfirmButton':!![],'timer':0x1194}):(Swal[_0x434bb5(0x10e)]({'position':_0x434bb5(0x110),'icon':_0x434bb5(0xfc),'title':'En\x20un\x20momento\x20se\x20cargará\x20el\x20formulario','showConfirmButton':!![],'timer':0x1194}),setTimeout(()=>{const _0x18fae9=_0x434bb5;document['getElementById']('card-1')[_0x18fae9(0x140)][_0x18fae9(0x123)]='none',document[_0x18fae9(0x114)](_0x18fae9(0x10c))[_0x18fae9(0x140)][_0x18fae9(0x123)]=_0x18fae9(0x131);},0x1388));})[_0x3e6b46(0x12e)](_0x8ba915=>{const _0x178d70=_0x3e6b46;Swal['fire']({'position':_0x178d70(0x110),'icon':'error','title':_0x178d70(0x116),'showConfirmButton':!![],'timer':0x157c});});});}));function validar(_0x588a83){const _0x485d9a=_0x36716b;let _0x3809a4=_0x588a83[_0x485d9a(0xfd)][_0x485d9a(0x13a)](/[0-9]/g,'');_0x3809a4=_0x3809a4[_0x485d9a(0x13a)](/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,''),_0x3809a4=_0x3809a4['replace'](/\b\w/g,_0x4f3312=>_0x4f3312['toUpperCase']()),_0x588a83[_0x485d9a(0xfd)]=_0x3809a4;}
+$(document).ready(() => {
+    // Configuración inicial
+    const link = "https://apirest-mysql-ywx2.onrender.com";
+    const endpoints = {
+        loginClave: link + "/api/token/loginClave",
+        saveusuario: link + "/api/vweb/saveusuario",
+        getEmail: link + "/api/vweb/getEmail"
+    };
+
+    // Elementos del DOM
+    const elements = {
+        passwordInput: document.getElementById("password-input"),
+        botonClave: document.getElementById("boton_clave"),
+        btnForm: document.getElementById("btn_form"),
+        form: document.getElementById("form"),
+        contrasenia: document.getElementById("contrasenia"),
+        validarContrasenia: document.getElementById("validar-contrasenia"),
+        email: document.getElementById("correo"),
+        card1: document.getElementById("card-1"),
+        crearCuenta: document.getElementById("crear-cuenta")
+    };
+
+    // Validar unicidad del correo electrónico
+    elements.email.addEventListener("change", async () => {
+        const email = elements.email.value.trim();
+        if (!email) return;
+
+        try {
+            const response = await fetch(endpoints.getEmail, {
+                method: "POST",
+                body: JSON.stringify({ correo: email }),
+                headers: { 'Content-Type': 'application/json' }
+            });
+            
+            const data = await response.json();
+            
+            if (data.length > 0) {
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "Correo ya registrado",
+                    text: "Este correo electrónico ya está en uso. Por favor utiliza otro.",
+                    confirmButtonColor: '#0056b3',
+                    confirmButtonText: 'Entendido'
+                });
+                elements.email.value = "";
+                elements.email.focus();
+            }
+        } catch (error) {
+            console.error("Error al validar correo:", error);
+        }
+    });
+
+    // Validar coincidencia de contraseñas
+    elements.validarContrasenia.addEventListener("change", () => {
+        if (elements.validarContrasenia.value !== elements.contrasenia.value) {
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Contraseñas no coinciden",
+                text: "Las contraseñas ingresadas no son iguales. Por favor verifica.",
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+            elements.validarContrasenia.value = "";
+            elements.validarContrasenia.focus();
+        }
+    });
+
+    // Validar fortaleza de contraseña
+    elements.contrasenia.addEventListener("change", () => {
+        const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        
+        if (!regex.test(elements.contrasenia.value)) {
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Contraseña débil",
+                html: "La contraseña debe tener:<ul><li>Mínimo 8 caracteres</li><li>Al menos una letra</li><li>Al menos un número</li></ul>",
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+            elements.contrasenia.value = "";
+            elements.contrasenia.focus();
+        }
+    });
+
+    // Toggle visibilidad de contraseña
+    function setupToggleVisibility() {
+        document.querySelectorAll('.toggle-visibility').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const input = icon.previousElementSibling;
+                input.type = input.type === 'password' ? 'text' : 'password';
+                icon.classList.toggle('fa-eye');
+                icon.classList.toggle('fa-eye-slash');
+            });
+        });
+    }
+    setupToggleVisibility();
+
+    // Envío del formulario de registro
+    elements.form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        
+        // Validación básica
+        if (!validateForm()) return;
+
+        // Deshabilitar botón y mostrar spinner
+        const originalText = elements.btnForm.innerHTML;
+        elements.btnForm.disabled = true;
+        elements.btnForm.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Registrando...';
+
+        try {
+            // Preparar datos del formulario
+            const formData = prepareFormData();
+            
+            // Registrar usuario
+            const registroResult = await registerUser(formData);
+            
+            if (registroResult.status === "CORRECTO") {
+                // Mostrar mensaje de éxito y redirigir al login
+                await Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: '¡Registro exitoso!',
+                    html: 'Tu cuenta ha sido creada correctamente.<br><br>Serás redirigido al login en 5 segundos...',
+                    timer: 5000,
+                    timerProgressBar: true,
+                    showConfirmButton: false,
+                    willClose: () => {
+                        window.location.href = "login.html";
+                    }
+                });
+                
+                // Redirección automática
+                setTimeout(() => {
+                    window.location.href = "login.html";
+                }, 5000);
+            } else {
+                throw new Error(registroResult.message || 'Error en el registro');
+            }
+        } catch (error) {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Error en el registro',
+                html: `Ocurrió un error al registrar tu cuenta: <strong>${error.message}</strong><br><br>Por favor intenta nuevamente o contacta a soporte técnico.`,
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+        } finally {
+            // Restaurar botón
+            elements.btnForm.disabled = false;
+            elements.btnForm.innerHTML = originalText;
+        }
+    });
+
+    // Función para validar el formulario completo
+    function validateForm() {
+        // Validar que todos los campos requeridos estén completos
+        const requiredFields = elements.form.querySelectorAll('[required]');
+        let isValid = true;
+        
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                field.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                field.classList.remove('is-invalid');
+            }
+        });
+        
+        if (!isValid) {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Campos incompletos',
+                text: 'Por favor completa todos los campos requeridos.',
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+            return false;
+        }
+        
+        // Validar contraseñas coincidentes
+        if (elements.contrasenia.value !== elements.validarContrasenia.value) {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Contraseñas no coinciden',
+                text: 'Las contraseñas ingresadas no son iguales.',
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+            return false;
+        }
+        
+        return true;
+    }
+
+    // Preparar datos del formulario
+    function prepareFormData() {
+        const formData = {};
+        
+        $('#form .form-control').each(function() {
+            const fieldName = this.id.replace(/\[\]/g, '');
+            if (!formData[fieldName]) formData[fieldName] = [];
+            formData[fieldName].push(this.value);
+        });
+        
+        $('#form .name').each(function() {
+            const fieldName = this.id.replace(/\[\]/g, '');
+            const combo = this;
+            const selected = combo.options[combo.selectedIndex].text;
+            
+            if (!formData[fieldName + 'DES']) formData[fieldName + 'DES'] = [];
+            formData[fieldName + 'DES'].push(selected);
+        });
+        
+        return formData;
+    }
+
+    // Registrar usuario en el backend
+    async function registerUser(formData) {
+        const userData = {
+            nombre: formData.nombre[0],
+            apeido_paterno: formData.apellido_paterno[0],
+            apeido_materno: formData.apellido_materno[0],
+            correo: formData.correo[0],
+            password: formData.contrasenia[0],
+            ciudad: formData.ciudad[0],
+            sucursal: formData.sucursal[0],
+            usuario: formData.correo[0]
+        };
+        
+        const response = await fetch(endpoints.saveusuario, {
+            method: "POST",
+            body: JSON.stringify(userData),
+            headers: { 'Content-Type': 'application/json' }
+        });
+        
+        return await response.json();
+    }
+
+    // Validación de clave (parte inicial del formulario)
+    elements.botonClave.addEventListener("click", async () => {
+        const clave = elements.passwordInput.value.trim();
+        if (!clave) return;
+        
+        // Mostrar spinner
+        const originalText = elements.botonClave.innerHTML;
+        elements.botonClave.disabled = true;
+        elements.botonClave.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Validando...';
+        
+        try {
+            const response = await fetch(endpoints.loginClave, {
+                method: "POST",
+                body: JSON.stringify({ clave }),
+                headers: { 'Content-Type': 'application/json' }
+            });
+            
+            const data = await response.json();
+            
+            if (data.message === "Incorrect clave") {
+                throw new Error('Clave incorrecta');
+            } else {
+                await Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Clave válida',
+                    text: 'Ahora puedes completar tu registro.',
+                    confirmButtonColor: '#0056b3',
+                    confirmButtonText: 'Continuar'
+                });
+                
+                elements.card1.style.display = 'none';
+                elements.crearCuenta.style.display = 'block';
+            }
+        } catch (error) {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Error',
+                text: error.message || 'Error al validar la clave',
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+        } finally {
+            elements.botonClave.disabled = false;
+            elements.botonClave.innerHTML = originalText;
+        }
+    });
+
+    // Función para validar nombres (solo letras)
+    function validar(input) {
+        let valor = input.value
+            .replace(/[0-9]/g, '') // Eliminar números
+            .replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, ''); // Eliminar caracteres especiales no permitidos
+        
+        // Convertir a mayúscula la primera letra de cada palabra
+        valor = valor.toLowerCase().replace(/\b\w/g, (letra) => letra.toUpperCase());
+        
+        input.value = valor;
+    }
+});

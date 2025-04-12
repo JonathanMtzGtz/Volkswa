@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
+
+*{
+  font-family: Montserrat;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Usar diferentes pesos según el tipo de texto */
+h1 {
+  font-weight: 700; /* Negrita */
+}
+
+h2 {
+  font-weight: 600; /* Semi-negrita */
+}
+
+p {
+  font-weight: 400; /* Regular */
+}
+
+.light-text {
+  font-weight: 300; /* Ligero */
+}
+
+
+.hero-image {
+    background-image: url('../img/Hero-bg1.png');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    z-index: -0;
+
+}
+.hero-image-pri{
+  background-image: url('../img/bg-hero-mo.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    z-index: -0;
+}
+
+
+.bg-gracias {
+  background-image: url('../img/Inicio.svg');
+  background-size: cover;
+  background-position: center;
+  height: 810px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  z-index: 0;
+}
+
+
+
+.hero-image-2 {
+  background-image: url('../img/campañaa.png');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  z-index: 0;
+}
+
+.hero-image-2::before{
+  content:'';
+     position: absolute;
+        top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: rgba(0,0,0,0.4);
+     z-index: 0;
+}
+
+
+
+.hero-text {
+    color: black;
+    padding-left: 100px;
+    width: 650px;
+    z-index: 2;
+}
+.hero-text-2 {
+  color: black;
+  padding-left: 100px;
+  width: 850px;
+}
+.navbar-container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.navbar {
+    background-color: transparent !important;
+    border: none;
+}
+
+.iconos{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  
+}
+.textcustom{
+    
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.icono{
+ padding-top: 40px;
+  flex-direction: column;
+    padding: 5px;
+    margin-left: 40px;
+}
+.section-content {
+    padding: 50px 0;
+    
+}
+.card-content {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+.center{
+    text-align: center;
+}
+.buton{
+    width: 180px;
+    height: 50px;
+    background-color: #DA5466;
+    border-radius: 8px;
+}
+.butontext{
+    color: white;
+    margin-top: 10px;
+}
+.section-content img {
+    max-width: 100%;
+    height: auto;
+}
+.section-black-border {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.section-black-border h2 {
+    margin-bottom: 20px;
+}
+.d-flex{
+display: flex;
+gap: 10px;
+}
+
+.form-control{
+  background-color: rgba(189, 0, 42, .06) !important;
+  height: 50px;
+
+}
+
+
+
+  /* Ajustes generales */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Espaciado entre imágenes en PC */
+.d-md-flex img {
+    max-width: 80%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+.team{
+
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+ border-radius: 45px;
+ padding: 0px;
+}
+
+.text-card{
+
+padding: 30px;
+}
+
+
+
+
+.footer{
+    height: 200px;
+    background-color: #E17684;
+    padding: 40px;
+}
+.img-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/undiaparaelfuturo.png');
+    background-size: cover;
+    background-position: center;
+  }
+ 
+  .card {
+    height: 100%;
+    width: 100%;
+  }
+  .logo-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+   
+  }
+  .logo {
+    max-height: 80px;
+  }
+ 
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .login-link span {
+    position: relative;
+  }
+  
+  .login-link span::before {
+    right: 10px;
+    margin-right: 10px;
+  }
+  .login-link span::after {
+    left: 10px;
+    margin-left: 10px;
+  }
+  .hero-image-informe {
+    background-image: url('../img/informe/bg-hero.png');
+    height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+
+}
+
+  .boton{
+    width: 180px;
+    height: 50px;
+    color: white;
+    background-color: #DA5461;
+    
+    border-radius: 10px;
+  }
+  .navbar-transparent {
+    background-color: transparent !important;
+    
+    -webkit-backdrop-filter: blur(10px); /* Esto es necesario para Safari */
+    border: none;
+}
+.info{
+  margin-left: 40px;
+}
+.dev{
+  background-color: black;
+  position: relative;
+    display: flex;
+    align-items:normal ;
+}
+svg {
+  width: 35px; 
+  height: 35px; 
+}
+.iconos {
+  display: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
+  justify-content: center; 
+  align-items: center; 
+  justify-items: center; 
+  width: 100%; 
+  max-width: 960px; 
+  margin: 0 auto; 
+}
+
+.icono {
+  display: flex;
+  align-items: center;
+  justify-content: start; 
+   gap: 10px; 
+  width: 100%; 
+}
+
+.icono img {
+  display: block;
+  width: auto;
+  height: 60px;
+}
+.card-1{
+  background-color: #DA5466;
+  border-radius: 20px;
+
+}
+.btn{
+  background-color: #DA5466;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .hero-image {
+      background-image: url('../img/bg-hero-mo.png'); 
+      
+     
+  }
+  .text-movil{
+    text-align: center !important;
+    padding: 20px;
+  }
+  
+  .login{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+@media (max-width: 768px) {
+  .hero-text {
+      padding: 20px; /* Agrega padding de 10px */
+      text-align: center; /* Centra el texto en el modo móvil */
+      width: 100%;
+   
+  }
+  .desk{
+    display: none;
+  }
+  .pass-secret{
+    margin-top: 15%;
+  }
+  .img-registro{
+    display: none;
+   }
+   
+}
+
+
+
+@media (max-width: 568px) {
+  .navbar-container {
+     padding: 10px;
+      width: 100% !important;
+  }
+  .card-content{
+    text-align: center;
+    align-items: center;
+  }
+  .textcustom{
+    width: 100%;
+    padding: 10px;
+
+  }
+  .text-card{
+    margin-right: 0px;
+    padding: 10px;
+    padding-bottom: 20px;
+
+  }
+  .logo-footer img{
+    height: 70px;
+  }
+  .img-registro{
+   display: none;
+  }
+  .TestModeBadge-container{
+    margin-bottom: 10px;
+  }
+  .hero-text {
+   padding: 20px !important; 
+  }
+.movil img{
+  width: 100%;
+  padding: 20px;
+}
+ol{
+  text-align: left !important;
+ }
+ .team{
+  padding: 15px;
+
+ }
+ p,h2{
+  text-align: center !important;
+ }
+}
+
+@media (min-width: 768px){
+ .movil{
+  display: none;
+ }
+   .pass-secret{
+   position: absolute;
+   top: 40%;
+  }
+
+}
+@media (max-width: 568px){
+  .hide{
+    display: none !important;
+  }
+ 
+}
+
+@media (min-width:769px  ) {
+  .slide-galeria{
+    display: none !important;
+  }
+  
+}
+
+.login{
+
+ height: 100vh;
+
+}
+
+/* Donacion*/
+
+.donation-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+#custom-amount {
+  display: none;
+  margin-top: 10px;
+ 
+}
+.confirmar{
+  border-radius: 10px;
+  background-color: #DA5466;
+  padding: 10px 20px;
+  color: white;
+}
+
+footer {
+  background-color: #DFB1B7;
+  padding: 40px 0;
+  color: black;
+}
+
+footer h2 {
+  color: black;
+}
+
+footer .logo-footer {
+  margin-bottom: 20px;
+}
+
+footer .social-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaciado entre iconos */
+}
+
+footer .social-icons a {
+  color: black;
+  text-decoration: none;
+}
+
+footer .contact-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  footer {
+      padding: 30px 0; /* Menos padding en pantallas pequeñas */
+  }
+}
+
+footer .footer-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espaciado entre los enlaces */
+}
+
+footer .footer-links a {
+  color: black;
+  text-decoration: none;
+}
+
+footer .footer-links span {
+  color: black;
+}
+.bg-a {
+  background-image: url('../img/campaña-apoyo.png');
+  background-size: cover;
+    background-position: center;
+    height: 480px;
+    border-radius:30px;
+
+}
+
+@media (max-width: 769px) {
+  .text-card{
+    margin-right: 0px !important;
+  }
+  .hide{
+    display: none !important;
+  }
+    
+}
+@media (max-width: 400px) {
+  .logo-1{
+    height: 30px !important;
+  }
+  .logo-2{
+    height: 30px !important;
+    
+  }
+  .iconos{
+    
+    gap: 0px !important;
+  }
+  .icono{
+    justify-content: center !important;
+    gap: 0px !important;
+    margin-left: -10px;
+  }
+  .btn-donar{
+   display: block !important;
+    margin-left: 7%;
+
+  }
+    
+}
+.btn-donar{
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.rr-pading{
+  padding-right: 1.7rem;
+}
+
+@media (max-width: 769px){
+ .text-card, h2{
+  margin-top: 10px;
+ 
+ }
+ h2{
+  text-align: center;
+ }
+  video{
+    width: 90% !important;
+  }
+  .card-content{
+    text-align: center;
+  }
+  ol{
+    text-align: left;
+  }
+
+}
+#card-1{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+
+
+@media (max-width: 568px){
+  .bg-a{
+    height: 300px !important;
+  }
+  .buton-bien{
+    text-align: center;
+    align-items: center;
+
+  }
+  .bt-gracias{
+    text-align: center;
+  }
+  .text-gracias,h1{
+    text-align: center;
+  }
+  .img-carousel {
+    height: 280px !important; /* Cambia a 1080px si quieres Full HD */
+    object-fit: cover;
+    width: 100%; /* Mantiene proporción y recorta el exceso */
+  }
+
+}
+
+
+ /* IMÁGENES RESPONSIVAS */
+ .img-responsive {
+  width: 48%;
+  padding: 10px;
+}
+
+/* VIDEO RESPONSIVO */
+.video-responsive {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* BOTÓN PERSONALIZADO */
+.btn-custom {
+  display: inline-block;
+  background: #DA5466;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btn-custom:hover {
+  background: #db4357;
+}
+
+
+.btn-primary{
+  border-color: white !important;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .hero-image-informe {
+      height: 30vh;
+  }
+
+  .hero-text h1 {
+      font-size: 2rem;
+  }
+
+  .img-responsive {
+      width: 100%;
+  }
+}
+
+
+.testimonio {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.testimonio img {
+  max-width: 100%;
+  height: auto;
+}
+
+.comillas {
+  margin-bottom: 10px;
+}
+
+.testimonio-texto {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.testimonio-rol {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+
+.button-container {
+  width: 300px;  /* Ajusta el ancho del contenedor */
+  margin: 0 auto;  /* Centra el botón si lo deseas */
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+ 
+}
+
+.carousel-indicators .active {
+  background-color: #DA5466;
+}
+.carousel-indicators{
+  gap: 10px;
+}
+.img-carousel {
+  height: 500px; /* Cambia a 1080px si quieres Full HD */
+  object-fit: cover;
+  width: 100%; /* Mantiene proporción y recorta el exceso */
+}
+footer a{
+  text-decoration-line: none;
+  color: black;
+  
+}
+.privacidad {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacidad iframe {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+.ods img {
+  border-radius: 15px;
+  height: 110px;
+  padding: 8px;
+  
+  
+
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+ 
+
+  .logo-2{
+    display: none !important;
+  }
+}
+
+
+.privacidad {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+
+
+@media (max-width: 768px) {
+  .privacidad {
+      height: 80vh; 
+  }
+  .btn-pdf{
+    width: 90px;
+    height: 40px;
+    font-size: 10px;
+   }
+
+
+
+}
+
+@media (max-width: 320px) {
+ .btn-pdf{
+  width: 90px;
+  height: 40px;
+  font-size: 10px;
+ }
+
+
+}
+
+
+
