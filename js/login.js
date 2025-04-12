@@ -30,6 +30,7 @@ $(document).ready(() => {
           password: pass.value
           }
 <<<<<<< HEAD
+<<<<<<< HEAD
       }
   
       fetch(part2+part1+"/loginUsuariovw",options)
@@ -38,6 +39,8 @@ $(document).ready(() => {
           console.log(resp.message);
           if (resp.message == "User not found" ||  resp.message == "Incorrect password" || resp.message == "Error logging in") {
 =======
+=======
+>>>>>>> f49ae92de44aec9b9bfdc2b41d23043909c89420
       
           const options = {
               method: "POST",
@@ -77,6 +80,9 @@ $(document).ready(() => {
               }
           })
           .catch(error => {
+<<<<<<< HEAD
+>>>>>>> f49ae92de44aec9b9bfdc2b41d23043909c89420
+=======
 >>>>>>> f49ae92de44aec9b9bfdc2b41d23043909c89420
               Swal.fire({
                   position: "top-center",
@@ -86,10 +92,14 @@ $(document).ready(() => {
                   timer: 15000,
                 });
 <<<<<<< HEAD
+<<<<<<< HEAD
                 setTimeout(() => {
   //window.location.href = "campañas.html";
                 },2000)
           }
+=======
+          })
+>>>>>>> f49ae92de44aec9b9bfdc2b41d23043909c89420
 =======
           })
 >>>>>>> f49ae92de44aec9b9bfdc2b41d23043909c89420
