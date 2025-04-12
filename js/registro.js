@@ -1,257 +1,305 @@
 $(document).ready(() => {
-const clave = document.getElementById("password-input");
-const link = "https://apirest-mysql-ywx2.onrender.com";
-//const link = "http://localhost:3001";
-const loginClave = link+"/a"+"p"+"i/token/loginClave";
-const saveusuario = link+"/a"+"p"+"i/vweb/saveusuario";
-const botonClave = document.getElementById("boton_clave");
-const btn_form = document.getElementById("btn_form");
-const form = document.getElementById("form");
-const contrasenia = document.getElementById("contrasenia");
-const validarContrasenia = document.getElementById("validar-contrasenia");
-const email = document.getElementById("correo");
-const getEmail = link+"/a"+"p"+"i/vweb/getEmail";
+    // Configuración inicial
+    const link = "https://apirest-mysql-ywx2.onrender.com";
+    const endpoints = {
+        loginClave: link + "/api/token/loginClave",
+        saveusuario: link + "/api/vweb/saveusuario",
+        getEmail: link + "/api/vweb/getEmail"
+    };
 
-//validar que no se repita el correo
-email.addEventListener("change", () => {
-    var data = {
-      correo : email.value
-    }
-    
-    const options = {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers:{
-        'Content-Type':'application/json'
-      }
-    }
-    
-    fetch(getEmail,options)
-    .then(resp=> resp.json())
-    .then(resp => {
-      console.log(resp.length)
-      if (resp.length > 0) {
-        Swal.fire({
-          position: "top-center",
-          icon: "error",
-          title: "lo sentimos, este correo ya fue registrado",
-          showConfirmButton: true,
-          timer: 10000,
-        }); 
-        email.value = "";
-      }
-      
-    })
-    
-    })
+    // Elementos del DOM
+    const elements = {
+        passwordInput: document.getElementById("password-input"),
+        botonClave: document.getElementById("boton_clave"),
+        btnForm: document.getElementById("btn_form"),
+        form: document.getElementById("form"),
+        contrasenia: document.getElementById("contrasenia"),
+        validarContrasenia: document.getElementById("validar-contrasenia"),
+        email: document.getElementById("correo"),
+        card1: document.getElementById("card-1"),
+        crearCuenta: document.getElementById("crear-cuenta")
+    };
 
-validarContrasenia.addEventListener("change", () => {
-    if (validarContrasenia.value != contrasenia.value) {
-        validarContrasenia.value = "";
-        return alert("Las contraseñas no coinciden");
-    }
-})
+    // Validar unicidad del correo electrónico
+    elements.email.addEventListener("change", async () => {
+        const email = elements.email.value.trim();
+        if (!email) return;
 
-contrasenia.addEventListener("change", () => {
-   
-    var regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-
-    if (!regex.test(contrasenia.value)) {
-        alert('La contraseña debe tener al menos 8 caracteres, incluyendo números y letras.');
-        contrasenia.value = "";
-    }
-});
-
-validaRTtoggleVisibility();
-
-function validaRTtoggleVisibility(){
-    const toggleIcons = document.querySelectorAll('.toggle-visibility');
-
-    toggleIcons.forEach(icon => {
-        icon.addEventListener('click', () => {
-          // Seleccionar el input asociado al ícono
-          const input = icon.previousElementSibling;
-    
-          // Alternar el tipo de input entre "password" y "text"
-          if (input.type === 'password') {
-            input.type = 'text';
-            icon.classList.remove('fa-eye');
-            icon.classList.add('fa-eye-slash');
-          } else {
-            input.type = 'password';
-            icon.classList.remove('fa-eye-slash');
-            icon.classList.add('fa-eye');
-          }
-        });
-      });
-}
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    btn_form.disabled = true;
-    btn_form.innerHTML = "Guardando registro...";
-    
-    var formData = {}; //construye un objeto formData
-    $('#form .form-control').each(function () {
-      var fieldName = this.id.replace(/\[\]/g, '');
-      console.log(fieldName, this.id)
-      if (!formData[fieldName])
-        formData[fieldName] = [];
-      formData[fieldName].push(this.value);
+        try {
+            const response = await fetch(endpoints.getEmail, {
+                method: "POST",
+                body: JSON.stringify({ correo: email }),
+                headers: { 'Content-Type': 'application/json' }
+            });
+            
+            const data = await response.json();
+            
+            if (data.length > 0) {
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "Correo ya registrado",
+                    text: "Este correo electrónico ya está en uso. Por favor utiliza otro.",
+                    confirmButtonColor: '#0056b3',
+                    confirmButtonText: 'Entendido'
+                });
+                elements.email.value = "";
+                elements.email.focus();
+            }
+        } catch (error) {
+            console.error("Error al validar correo:", error);
+        }
     });
 
-    $('#form .name').each(function () {
-        var fieldName = this.id.replace(/\[\]/g, '');
-        if (!formData[fieldName + 'DES'])
-          formData[fieldName + 'DES'] = [];
-         
-        var combo = this;
-        var selected = combo.options[combo.selectedIndex].text;
-        formData[fieldName + 'DES'].push(selected);
-      });
-      
-      fnRegistro(formData);
-});
-
-async function fnRegistro(e) {
-    let req = fnJson(e);
-    let x = 0;
-    let result = [];
-        result[x] = await addRegistro(req);
-        if (result[x].status == "CORRECTO") {
+    // Validar coincidencia de contraseñas
+    elements.validarContrasenia.addEventListener("change", () => {
+        if (elements.validarContrasenia.value !== elements.contrasenia.value) {
             Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: "Registro realizado con éxito",
-                showConfirmButton: true,
-                timer: 4500
-                }) ;
+                position: "center",
+                icon: "error",
+                title: "Contraseñas no coinciden",
+                text: "Las contraseñas ingresadas no son iguales. Por favor verifica.",
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+            elements.validarContrasenia.value = "";
+            elements.validarContrasenia.focus();
+        }
+    });
+
+    // Validar fortaleza de contraseña
+    elements.contrasenia.addEventListener("change", () => {
+        const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        
+        if (!regex.test(elements.contrasenia.value)) {
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Contraseña débil",
+                html: "La contraseña debe tener:<ul><li>Mínimo 8 caracteres</li><li>Al menos una letra</li><li>Al menos un número</li></ul>",
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+            elements.contrasenia.value = "";
+            elements.contrasenia.focus();
+        }
+    });
+
+    // Toggle visibilidad de contraseña
+    function setupToggleVisibility() {
+        document.querySelectorAll('.toggle-visibility').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const input = icon.previousElementSibling;
+                input.type = input.type === 'password' ? 'text' : 'password';
+                icon.classList.toggle('fa-eye');
+                icon.classList.toggle('fa-eye-slash');
+            });
+        });
+    }
+    setupToggleVisibility();
+
+    // Envío del formulario de registro
+    elements.form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        
+        // Validación básica
+        if (!validateForm()) return;
+
+        // Deshabilitar botón y mostrar spinner
+        const originalText = elements.btnForm.innerHTML;
+        elements.btnForm.disabled = true;
+        elements.btnForm.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Registrando...';
+
+        try {
+            // Preparar datos del formulario
+            const formData = prepareFormData();
+            
+            // Registrar usuario
+            const registroResult = await registerUser(formData);
+            
+            if (registroResult.status === "CORRECTO") {
+                // Mostrar mensaje de éxito y redirigir al login
+                await Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: '¡Registro exitoso!',
+                    html: 'Tu cuenta ha sido creada correctamente.<br><br>Serás redirigido al login en 5 segundos...',
+                    timer: 5000,
+                    timerProgressBar: true,
+                    showConfirmButton: false,
+                    willClose: () => {
+                        window.location.href = "login.html";
+                    }
+                });
+                
+                // Redirección automática
                 setTimeout(() => {
-                    window.location.href = "Registro.html";
-                },5000)
-        }else{
+                    window.location.href = "login.html";
+                }, 5000);
+            } else {
+                throw new Error(registroResult.message || 'Error en el registro');
+            }
+        } catch (error) {
             Swal.fire({
                 position: 'center',
                 icon: 'error',
-                title: "Algo fallo, vuelve a intentarlo, si el problema persiste, reporta al correo: mtzxx@hotmail.com",
-                showConfirmButton: true,
-                timer: 4500
-                }) 
+                title: 'Error en el registro',
+                html: `Ocurrió un error al registrar tu cuenta: <strong>${error.message}</strong><br><br>Por favor intenta nuevamente o contacta a soporte técnico.`,
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+        } finally {
+            // Restaurar botón
+            elements.btnForm.disabled = false;
+            elements.btnForm.innerHTML = originalText;
+        }
+    });
+
+    // Función para validar el formulario completo
+    function validateForm() {
+        // Validar que todos los campos requeridos estén completos
+        const requiredFields = elements.form.querySelectorAll('[required]');
+        let isValid = true;
+        
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                field.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                field.classList.remove('is-invalid');
+            }
+        });
+        
+        if (!isValid) {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Campos incompletos',
+                text: 'Por favor completa todos los campos requeridos.',
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+            return false;
         }
         
-}
-
- function addRegistro(e){
-    console.log(e);
-const data = {
-    nombre: e.nombre,
-    apeido_paterno: e.apeido_paterno,
-    apeido_materno: e.apeido_materno,
-    correo: e.correo,
-    password: e.password,
-    ciudad: e.ciudad,
-    sucursal: e.sucursal,
-    usuario: e.correo
-}
-const options = {
-    method : "POST",
-    body : JSON.stringify(data),
-    headers:{
-        'Content-Type':'Application/json'
-    } 
-}
-
-return fetch(saveusuario,options)
-.then(resp => resp.json())
-.then(resp => {
-    console.log(resp)
-    return resp
-})
-.catch(error => {
-    return error;
-})
-
-}
-
-function fnJson(e){
-var req = {
-    nombre: e.nombre[0],
-    apeido_paterno: e.apellido_paterno[0],
-    apeido_materno: e.apellido_materno[0],
-    correo: e.correo[0],
-    password: e.contrasenia[0],
-    ciudad: e.ciudad[0],
-    sucursal: e.sucursal[0],
-    usuario: e.correo[0]
-}
-
-return req;
-}
-
-
-
-botonClave.addEventListener("click", () => {
-    const data  = {
-        clave: clave.value
-    }
-    
-    const options = {
-        method : "POST",
-        body   : JSON.stringify(data),
-        headers :{
-            'Content-Type':'Application/json'
-        }
-    }
-    
-    fetch(loginClave,options)
-    .then(resp => resp.json())
-    .then(resp => {
-        console.log(resp.message);
-        if (resp.message == "Incorrect clave") {
+        // Validar contraseñas coincidentes
+        if (elements.contrasenia.value !== elements.validarContrasenia.value) {
             Swal.fire({
                 position: 'center',
                 icon: 'error',
-                title: "LA CLAVE NO ES CORRECTA",
-                showConfirmButton: true,
-                timer: 4500
-                }) 
-        }else{
+                title: 'Contraseñas no coinciden',
+                text: 'Las contraseñas ingresadas no son iguales.',
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+            return false;
+        }
+        
+        return true;
+    }
+
+    // Preparar datos del formulario
+    function prepareFormData() {
+        const formData = {};
+        
+        $('#form .form-control').each(function() {
+            const fieldName = this.id.replace(/\[\]/g, '');
+            if (!formData[fieldName]) formData[fieldName] = [];
+            formData[fieldName].push(this.value);
+        });
+        
+        $('#form .name').each(function() {
+            const fieldName = this.id.replace(/\[\]/g, '');
+            const combo = this;
+            const selected = combo.options[combo.selectedIndex].text;
+            
+            if (!formData[fieldName + 'DES']) formData[fieldName + 'DES'] = [];
+            formData[fieldName + 'DES'].push(selected);
+        });
+        
+        return formData;
+    }
+
+    // Registrar usuario en el backend
+    async function registerUser(formData) {
+        const userData = {
+            nombre: formData.nombre[0],
+            apeido_paterno: formData.apellido_paterno[0],
+            apeido_materno: formData.apellido_materno[0],
+            correo: formData.correo[0],
+            password: formData.contrasenia[0],
+            ciudad: formData.ciudad[0],
+            sucursal: formData.sucursal[0],
+            usuario: formData.correo[0]
+        };
+        
+        const response = await fetch(endpoints.saveusuario, {
+            method: "POST",
+            body: JSON.stringify(userData),
+            headers: { 'Content-Type': 'application/json' }
+        });
+        
+        return await response.json();
+    }
+
+    // Validación de clave (parte inicial del formulario)
+    elements.botonClave.addEventListener("click", async () => {
+        const clave = elements.passwordInput.value.trim();
+        if (!clave) return;
+        
+        // Mostrar spinner
+        const originalText = elements.botonClave.innerHTML;
+        elements.botonClave.disabled = true;
+        elements.botonClave.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Validando...';
+        
+        try {
+            const response = await fetch(endpoints.loginClave, {
+                method: "POST",
+                body: JSON.stringify({ clave }),
+                headers: { 'Content-Type': 'application/json' }
+            });
+            
+            const data = await response.json();
+            
+            if (data.message === "Incorrect clave") {
+                throw new Error('Clave incorrecta');
+            } else {
+                await Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Clave válida',
+                    text: 'Ahora puedes completar tu registro.',
+                    confirmButtonColor: '#0056b3',
+                    confirmButtonText: 'Continuar'
+                });
+                
+                elements.card1.style.display = 'none';
+                elements.crearCuenta.style.display = 'block';
+            }
+        } catch (error) {
             Swal.fire({
                 position: 'center',
-                icon: 'success',
-                title: "En un momento se cargará el formulario",
-                showConfirmButton: true,
-                timer: 4500
-                });
-                setTimeout(() => {
-                    document.getElementById('card-1').style.display = 'none'; // Oculta el card-1
-                    document.getElementById('crear-cuenta').style.display = 'block'; // Muestra el formulario de creación de cuenta
-                },5000)
+                icon: 'error',
+                title: 'Error',
+                text: error.message || 'Error al validar la clave',
+                confirmButtonColor: '#0056b3',
+                confirmButtonText: 'Entendido'
+            });
+        } finally {
+            elements.botonClave.disabled = false;
+            elements.botonClave.innerHTML = originalText;
         }
-    })
-    .catch(error => {
-        Swal.fire({
-            position: 'center',
-            icon: 'error',
-            title: "Error al enviar la petición, volver a intentar, si persiste el problema reportar al correo: mtzxx@hotmail.com",
-            showConfirmButton: true,
-            timer: 5500
-            }) 
-    })
-})
+    });
 
+    // Función para validar nombres (solo letras)
+    function validar(input) {
+        let valor = input.value
+            .replace(/[0-9]/g, '') // Eliminar números
+            .replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, ''); // Eliminar caracteres especiales no permitidos
+        
+        // Convertir a mayúscula la primera letra de cada palabra
+        valor = valor.toLowerCase().replace(/\b\w/g, (letra) => letra.toUpperCase());
+        
+        input.value = valor;
+    }
 });
-
-function validar(input) {
-    // Eliminar números
-    let valor = input.value.replace(/[0-9]/g, '');
-
-    // Eliminar caracteres que no sean letras, espacios o caracteres especiales permitidos
-    valor = valor.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '');
-
-    // Convertir la primera letra de cada palabra a mayúscula
-    valor = valor.replace(/\b\w/g, (letra) => letra.toUpperCase());
-
-    // Actualizar el valor del input
-    input.value = valor;
-}
